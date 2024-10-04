@@ -1,0 +1,19 @@
+
+
+Flow of Pointer chapter - what's learn
+
+1. Memory address
+2. Pointers, Pointer to Pointer
+
+3. Pass by References = Pointer + References (Alias)
+4. Array pointers
+5. Pointer Arithematics
+
+6. Quest
+
+
+Use of symbol &
+- bitwise OR, address of, Alias
+
+Use of *
+- multipy, derefence
