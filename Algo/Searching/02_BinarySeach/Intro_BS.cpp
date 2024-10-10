@@ -52,3 +52,6 @@ int main() {
     return 0;
 }
 
+
+// Binary search mai sabse jayada imp hai to identify the SEARCH-SPACE kon sa hai
+
