@@ -1,0 +1,12 @@
+
+Here,
+ we'll mention all the concepts that we learn and observe on the practice the DSA prob from the various topics
+
+
+
+1. Three prob (Book Alloc + Painter Parition + Aggressive Cows) -- learn min(max), max(min) to ans = range,then apply Binary Search 
+
+2.  Sorting Algo: yah DSA ques (LeetCode) ko solve karne ke liye use nahi karte h, but Interview / HR mai ques puch sakta h
+    ankit maje karo enjoy tumhara ye topics complete h pahle (GATE SAMASHER se kiye ho sem2 IIT Patna mai) only recap from the short notes okkkk bhai
+
+3.  
