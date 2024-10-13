@@ -19,6 +19,9 @@ using namespace std;
 int binarySearch(vector<int> arr, int tar) {
     int st=0, end=arr.size()-1;
 
+//note: aap mid ko define karo while loop ke under, otherwise bahar defind karne se TLE error dega Leetcode
+
+
     while(st <= end) {
         //int mid = (st + end) /2;   //overflow when big index val
         int mid = st + (end - st) / 2;
