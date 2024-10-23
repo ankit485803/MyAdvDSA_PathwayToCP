@@ -41,7 +41,7 @@ Sequential: vector, list, Deque
 
 Pair (is a part of c++ utility libray)
 
-Non-Squential: Stack, Queue, 
+Non-Squential: Stack, Queue, Map, Set
 
 
 */
