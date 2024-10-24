@@ -11,6 +11,12 @@ using namespace std;
 
 #include <stack>  //non sequential
 #include <queue>
+#include <map>
+#include <set>
+
+
+//Now algorithm STL
+#include <algorithm>
 
 
 
@@ -37,7 +43,7 @@ C++  STL comes with four parts:
 
 in container = Sequenctial + non sequential container
 
-Sequential: vector, list, Deque
+Sequential: vector, list, Deque (pair)
 
 Pair (is a part of c++ utility libray)
 
@@ -54,3 +60,11 @@ int main() {
 
     return 0;
 }
+
+
+/*
+many algo in c++ but we will read which is freq used 
+
+Algorithms:  sorting,  reverse, 
+
+*/
