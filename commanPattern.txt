@@ -15,4 +15,11 @@ Here,
 3.  The one-pass algorithm for sorting colors, commonly known as the Dutch National Flag (DNF) algorithm, 
 efficiently sorts an array containing three distinct values (in this case, 0s, 1s, and 2s) in a single traversal. 
 
-4. 
+4. In permutation of string ques - if Constraints in ques given -- lowecase + uppercase + specailChar + digits. In this case hnko nahi pata h kitna freq hai, then
+then it's solutin hai aap ek unordered map create karo and store <char, int> will read in HASTING chapter
+
+search s1 permutation in s2 using     WINDOW BASED SEARCHING tecniq 
+
+
+
+5. 
