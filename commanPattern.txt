@@ -23,3 +23,12 @@ search s1 permutation in s2 using     WINDOW BASED SEARCHING tecniq
 
 
 5. 
+
+
+
+
+
+
+
+To learn:-
+imp function to convert int to str:  to_string(count)
