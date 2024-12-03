@@ -22,10 +22,10 @@ search s1 permutation in s2 using     WINDOW BASED SEARCHING tecniq
 
 
 
-5. 
+5. HASTING (map, set) -- jiska kam h Complex ko O(1) CONSTANT bana dena, (ankit use this cocnept in twoSum prob- leetcode.com/problems/two-sum/)
 
 
-
+6. Slow-Fast pointer approach (in LinkedList chapter ) but ankit solve in FindDup, This method is used to detect the CYCLE in linked list 
 
 
 
