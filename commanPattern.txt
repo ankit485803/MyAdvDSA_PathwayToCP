@@ -34,6 +34,14 @@ search s1 permutation in s2 using     WINDOW BASED SEARCHING tecniq
 
 
 6. Slow-Fast pointer approach (in LinkedList chapter ) but ankit solve in FindDup, This method is used to detect the CYCLE in linked list 
+    method1: BruteForce -- ans = (size/2  + 1)
+    method2: SLOW-FAST POINTER approach to find middle of LL, this approach is also used in next topic: CYCLE-DETECTION in LL
+    I write this ppoint on 7th Jan 2025 (Tueday) from NESAC ISRO Meghalaya Centre
+    
+
+
+
+
 
 
 
