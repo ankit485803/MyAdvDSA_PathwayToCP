@@ -48,7 +48,7 @@ public:
 
     // Method to insert a node at the beginning (push_front)
     void push_front(int val) {
-        Node* newNode = new Node(val);  // Create a new dynamic node
+        Node* newNode = new Node(val);  // Create a new DYNAMIC node
 
         if (head == NULL) {
             // If the list is empty, the new node becomes both the head and tail
