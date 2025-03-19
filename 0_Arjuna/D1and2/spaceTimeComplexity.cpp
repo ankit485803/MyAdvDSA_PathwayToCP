@@ -30,8 +30,6 @@ src:  https://leetcode.com/discuss/post/6067881/cp-special-learn-time-complexity
 
 Nested loop - TC = O(N^2)
 
-
-
 Space complexity represents the amount of memory required by an algorithm as input size N grows.
 
 Types of Space Usage
