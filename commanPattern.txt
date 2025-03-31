@@ -45,6 +45,10 @@ positive integers starting from 1 to n. Recursion assumes
 that you're summing up from 1 upwards, and it depends on a positive base case (n = 1), which doesn't apply to negative numbers.
 
 
+8. TC = total call * work done in each call 
+GCD = HCF
+formula
+LCM(a, b) = |a*b| divide by GCD(a, b)
 
 
 
