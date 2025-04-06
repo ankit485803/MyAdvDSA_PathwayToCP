@@ -1,0 +1,13 @@
+
+Non Linear DS (Hierachiacl )
+
+Hierarchical data structures are structures where data is organized in a tree-like format, with elements having parent-child
+ relationships. These are used when you need to represent
+ data that has a nested or ranked structure, such as organizational charts, file systems, XML/HTML documents, etc.
+
+
+
+
+1.  Tree
+
+2. Graph
