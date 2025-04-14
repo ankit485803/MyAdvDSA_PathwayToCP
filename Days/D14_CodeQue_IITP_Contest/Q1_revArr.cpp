@@ -112,3 +112,19 @@ vector<string> split(const string &str) {
 
     return tokens;
 }
+
+
+
+// method2: using two pointer approach -- TC=O(N), SC=O(1)
+
+vector<int> revArr(vector<int> arr) {
+    int st = 0;
+    int end = arr.size()-1;
+
+    while(st < end) {
+        swap(arr[st], arr[end]);
+        st++;
+        end--;
+    }
+    return arr;
+}
