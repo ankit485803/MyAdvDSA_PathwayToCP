@@ -31,3 +31,14 @@ class Solution {
         }
     };
     
+
+/* Bitwise operator: AND, OR, XOR, left and right shift
+
+
+
+0b  matlab binary repre
+0x matlab octa
+
+hm computer mai negative nub mai store nahi karte h, we use two complements
+
+*/
