@@ -67,6 +67,18 @@ Note: jab bhi hmko tree ka ques aaye to hmko RECURSION kw tarh sochna hai -- tol
 To learn:-
 imp function to convert int to str:  to_string(count)
 
+Learn DSA using project
+src link: https://youtube.com/shorts/Ve0muiObnrY?si=i7H6t4RmcE7PKOYt
+
+a. Snake Game: make from array + loop where handle the Movement & Collision detection 
+b. Cash Flow Minimization: uses Graph + Heap -- graph traversal & mini heap concepts
+c. Pseudo Solver: Backtracking algorithm - to manage recursive calls and Constraints to solve the complex puzzle
+
+d. File Zipper: Huffman Encoding se aap data ko compression karo,  Greedy algo se optimal code generate karo jo compression RATIO ko
+                    ko increase kar dega + efficiency ko increase kar dega
+
+e. Map Navigator: jo Dijistra algo use karte h shotest path ko find out kata hai
+
 
 
 
