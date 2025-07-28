@@ -1,8 +1,15 @@
 
-// this ques on GFG   https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1
+/* this ques on GFG   https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1
 
 
-// This is book allocation problem. Here we apply the binary search algo, not directly, but indirectly the concept
+11th Oct 2024 (Friday) se start
+
+
+ This is book allocation problem. Here we apply the binary search algo, not directly, but indirectly the concept
+
+ */
+
+
 
 #include <iostream>
 #include <vector>

@@ -1,11 +1,24 @@
 
-// src of ques   https://leetcode.com/problems/container-with-most-water/description/
-//concept: arrary
+/* src of ques   https://leetcode.com/problems/container-with-most-water/description/
 
-// method 1: Bruter force approach, time complexity = 
-// pahle find out all possible container with pick 2 lines at a time, fir jake max value wala container ko print kar dege
 
-// nested loop: 1st = n time and  2nd = n times; time complexity of nested loop = O(n^2) which is quadratic 
+21st Sep 2024 
+
+concept: arrary
+
+method 1: Bruter force approach, time complexity = 
+ pahle find out all possible container with pick 2 lines at a time, fir jake max value wala container ko print kar dege
+
+
+
+
+
+ nested loop: 1st = n time and  2nd = n times; time complexity of nested loop = O(n^2) which is quadratic 
+
+ */
+
+
+
 #include <iostream>
 #include <vector>
 using namespace std;

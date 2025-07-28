@@ -1,4 +1,7 @@
 
+
+
+
 // In C++, a vector is a part of the Standard Template Library (STL) and is used to store a dynamic array of elements. 
 // Vectors automatically manage memory and allow you to easily add, remove, and access elements. 
 
