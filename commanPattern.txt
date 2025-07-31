@@ -64,6 +64,19 @@ Note: jab bhi hmko tree ka ques aaye to hmko RECURSION kw tarh sochna hai -- tol
 
 9. Sum of two numb without + and - operators: hint yaha concepts of BitWise operators (AND, OR, XOR, left right shift) hoga
 
+10. Sliding window problems
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 To learn:-

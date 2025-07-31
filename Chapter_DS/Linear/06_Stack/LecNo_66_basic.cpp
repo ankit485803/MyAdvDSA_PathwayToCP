@@ -4,6 +4,7 @@
 /* 8th Feb 2025 (Saturday) from IIRS ISRO Dehradun - PG room
 done
 
+LecNo 66 Shardha didi
 
 Stack is Last In First Out == matlab delete or insert from top hota hai
 
