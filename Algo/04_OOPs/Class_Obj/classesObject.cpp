@@ -39,6 +39,7 @@ class Teacher {
     string dept;
     string subject;
     double salary;
+    
 
 
 
