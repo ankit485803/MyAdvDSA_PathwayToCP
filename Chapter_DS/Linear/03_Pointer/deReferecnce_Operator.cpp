@@ -2,8 +2,12 @@
 #include <vector>
 using namespace std;
 
-// new chap: POINTER
 
+/*
+
+de-refence matlab vale at address
+
+*/
 
 int main() {
     int a = 10;
