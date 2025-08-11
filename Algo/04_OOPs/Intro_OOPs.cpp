@@ -17,4 +17,12 @@ Class: is like a blueprint of these entities
 Function means method hota hai
 eg of Teacher, Amazon 
 
+
+
+4 pillars of oops:
+i. Encapsulation
+ii. Abstraction
+iii. Inheritance
+iv. polymoriphism 
+
 */
