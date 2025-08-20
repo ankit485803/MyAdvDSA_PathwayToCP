@@ -77,9 +77,49 @@ k is even
 
 
 
+
 class Solution {
 public:
     long long maxProfit(vector<int>& prices, vector<int>& strategy, int k) {
+        int n = prices.size();
         
+        // Step 1: Calculate the initial profit
+        long long initialProfit = 0;
+        for (int i = 0; i < n; ++i) {
+            initialProfit += strategy[i] * prices[i]; // Calculate profit based on current strategy
+        }
+        
+        // Step 2: Try modifying every subarray of length k
+        long long maxProfit = initialProfit; // Start with the initial profit
+        
+        // Iterate through all possible subarrays of length k
+        for (int i = 0; i <= n - k; ++i) {
+            long long profitChange = 0;
+            
+            // First k/2 elements of the subarray (set to 0, hold)
+            for (int j = i; j < i + k / 2; ++j) {
+                if (strategy[j] == -1) {
+                    profitChange += prices[j];  // If buying, profit changes to zero (gain prices[j])
+                } else if (strategy[j] == 1) {
+                    profitChange -= prices[j];  // If selling, profit becomes negative (lose prices[j])
+                }
+                // If holding (0), no change to profit
+            }
+            
+            // Last k/2 elements of the subarray (set to 1, sell)
+            for (int j = i + k / 2; j < i + k; ++j) {
+                if (strategy[j] == -1) {
+                    profitChange += 2 * prices[j];  // If buying, profit change is 2 * prices[j] (gain prices[j])
+                } else if (strategy[j] == 0) {
+                    profitChange += prices[j];  // If holding, profit changes to prices[j] (sell it)
+                }
+                // If selling (1), no change to profit
+            }
+            
+            // Update the maximum profit
+            maxProfit = max(maxProfit, initialProfit + profitChange);
+        }
+        
+        return maxProfit;  // Return the maximum profit after checking all subarrays
     }
-};©leetcode
+};
