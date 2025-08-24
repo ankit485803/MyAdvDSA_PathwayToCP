@@ -3,8 +3,8 @@
 
 /*
 
-15th Aug 2025 (IndepDay)
+15th Aug 2025 (Friday - IndepDay)
 
-16th 
+16th Aug (Sat - Krishna Jamnsathi)
 
 */
