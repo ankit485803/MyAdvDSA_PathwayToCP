@@ -61,3 +61,21 @@ int main() {
     std::cout << "GCD of " << a << " and " << b << " is: " << gcd_value << std::endl;  //TC=O(1)
     return 0;
 }
+
+
+/*
+rename this 
+
+PS C:\Users\sanja\Desktop\GitHub_ankit485803\MyAdvDSA_PathwayToCP> 
+ *  History restored 
+
+
+ INTO
+
+PS C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP> git remote -v
+origin  https://github.com/ankit485803/MyAdvDSA_PathwayToCP.git (fetch)
+origin  https://github.com/ankit485803/MyAdvDSA_PathwayToCP.git (push)
+PS C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP> 
+
+
+*/
