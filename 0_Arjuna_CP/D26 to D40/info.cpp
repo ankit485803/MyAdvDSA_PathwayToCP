@@ -27,4 +27,11 @@ PS C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP>
 
  This is totally normal — this is the GitHub repo URL, not related to your folder name.
 
+
+ dirctly open vs code  any  folder using code .
+  
+ 
+PS C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP> code .
+PS C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP>
+
 */
