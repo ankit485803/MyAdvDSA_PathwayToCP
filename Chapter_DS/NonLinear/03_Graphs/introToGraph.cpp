@@ -3,7 +3,9 @@
 
 /*
 
-27th Aug 2025 (Wednesday - Happy Ganesh Charthu Puja) start new DS - Graphs vvvv imp for placemnt/interview
+27th Aug 2025 (Wednesday - Happy Ganesh Charthu Puja) lecNo 109
+
+start new DS - Graphs vvvv imp for placemnt/interview
 
 
 Graphs: networks of nodes, this is simple (how vertex/edges connection, which algo should apply, many edge cases)
