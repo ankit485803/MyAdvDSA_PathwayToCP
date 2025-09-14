@@ -52,3 +52,26 @@ public:
         
     }
 };
+
+
+
+/*
+
+
+
+
+Spoilers below
+
+Q1: Take the minimum s + t
+
+Q2: Sort the numbers in descending order, tracking what we have seen so far. For new numbers, append them to our result.
+
+Q3: I used bitset DP and prefixes / suffixes to tell which combinations were doable.
+
+Q4: knapsack dp with dp(i, prevParity, prevPrevParity) and we can take or skip the i-th number.
+
+
+
+Result = 2Q / 4
+
+*/
