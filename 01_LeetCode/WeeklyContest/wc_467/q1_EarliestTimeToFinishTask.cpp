@@ -2,7 +2,7 @@
 
 /*
 
-14th Sep 2025 (Sunday - after ISRO ICRB)
+14th Sep 2025 (Sunday - after ISRO ICRB 2025 paper postpned from 14th sep to 26th Oct in between Diwali Chhath Puja)
 
 https://leetcode.com/contest/weekly-contest-467/problems/earliest-time-to-finish-one-task/description/
 
