@@ -1,5 +1,5 @@
 
-// learn the BS (apply only for sorted arr - ascending or descending  called MONOTONIC matlab nahi increase ya decreasing) concept
+// learn the BS (apply only for sorted arr - ascending or descending  called MONOTONIC matlab   increase ya decreasing) concept
 // Linear Search = O(n) but Binary search = O(log(n))
 
 // 2 searching algo - Linear or Binary
