@@ -4,7 +4,7 @@
 
 /*
 
-25th Sep 2025 (Wednesday - thirdDay Puja Navratri)
+25th Sep 2025 (Wednesday - fourth Day Puja Navratri)
 
 qno 1858   https://leetcode.com/problems/frequency-of-the-most-frequent-element/description/
 
@@ -62,6 +62,6 @@ Sliding window: O(n)
 
 Total: O(n log n)
 Space: O(1)
-
+c
 
 */

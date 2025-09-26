@@ -3,7 +3,7 @@
 
 /*
 
-25th Sep 2025 (Thursday - fourth day puja Maa Durja)
+24th Sep 2025 (Thursday - third day puja Maa Durja)
 
 qno 189     https://leetcode.com/problems/rotate-array/
 
