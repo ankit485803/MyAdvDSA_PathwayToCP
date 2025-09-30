@@ -25,6 +25,10 @@ Here,
 3.  The one-pass algorithm for sorting colors, commonly known as the Dutch National Flag (DNF) algorithm, 
 efficiently sorts an array containing three distinct values (in this case, 0s, 1s, and 2s) in a single traversal. 
 
+this DNF is based on Netherland flag colors: C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\01_LeetCode\sortColor.cpp
+
+
+
 4. In permutation of string ques - if Constraints in ques given -- lowecase + uppercase + specailChar + digits. In this case hnko nahi pata h kitna freq hai, then
 then it's solutin hai aap ek unordered map create karo and store <char, int> will read in HASTING chapter
 
@@ -65,6 +69,9 @@ Note: jab bhi hmko tree ka ques aaye to hmko RECURSION kw tarh sochna hai -- tol
 9. Sum of two numb without + and - operators: hint yaha concepts of BitWise operators (AND, OR, XOR, left right shift) hoga
 
 10. Sliding window problems
+
+
+11. Dutch 
 
 
 
