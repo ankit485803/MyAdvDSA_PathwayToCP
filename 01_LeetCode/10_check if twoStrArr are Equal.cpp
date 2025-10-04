@@ -9,6 +9,8 @@
 qno 1662    https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/
 
 
+Medal LeetCode 50 days  https://leetcode.com/medal/?showImg 
+https://leetcode.com/medal/?showImg=0&id=8304728&isLevel=false
 
 
 
