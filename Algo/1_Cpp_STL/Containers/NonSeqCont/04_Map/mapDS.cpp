@@ -1,5 +1,7 @@
 
 
+//recap again on 17th Oct 2025 (Friday - winter Spring Sem5  IITP 3rd year after ISRO Meghalaya Dehradun)
+
 #include <iostream>
 using namespace std;
 #include <map>
@@ -8,6 +10,8 @@ using namespace std;
 
 it is used to store the (key, value) pair. and cam visualize like table. Key is UNIQUE , eg. student roll no in school, employee id in company
 map : yah hmesa pront hoga sorted order mai, ascending order accord to key
+
+
 
 
 

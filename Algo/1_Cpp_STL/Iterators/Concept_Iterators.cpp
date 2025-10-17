@@ -8,7 +8,7 @@ using namespace std;
 
 
 1. vec.begin() 
-2.  vec.end()   : this not point last elem, be alert ankit it give (last + 1)  here may be garbage value, when we derefernce * 
+2.  vec.end()   : this not point last elem, be alert ankit it give  (last + 1)  here may be garbage value, when we derefernce * 
 output may be 1 or 0 depond upon the compile
 
 
