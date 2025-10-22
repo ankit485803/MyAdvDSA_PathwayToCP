@@ -234,7 +234,7 @@ n is even.
 
 class Solution {
 public:
-    double minimumAverage(vector<int>& nums) {  //tc=O(logN), sc=O(1)
+    double minimumAverage(vector<int>& nums) {  //tc=O(n logN), sc=O(n)
      
         sort(nums.begin(), nums.end());
         
