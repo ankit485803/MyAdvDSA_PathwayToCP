@@ -71,7 +71,12 @@ Note: jab bhi hmko tree ka ques aaye to hmko RECURSION kw tarh sochna hai -- tol
 10. Sliding window problems
 
 
-11. Dutch 
+11.  find(), and rfind() keywords uses:     C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\0_Arjuna_CP\D41_Onward_Sem5\q29_NoPerfectPairs_SeparateBlackWhiteBall.cpp
+rfind(sub, 0) == 0 → means “does this string start with sub?”
+rfind() by itself → “find me the last occurrence of sub.”
+
+
+12.
 
 
 

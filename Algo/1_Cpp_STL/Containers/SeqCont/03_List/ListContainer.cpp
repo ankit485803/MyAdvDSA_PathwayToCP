@@ -14,6 +14,8 @@ using namespace std;
 
 
 
+//recap on 8th Nov 2025 (Saturday - Sem5 IITP 3rd Year)
+
 int main() {
 
     list<int> myList;
