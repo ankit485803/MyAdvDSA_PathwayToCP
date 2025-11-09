@@ -1,6 +1,9 @@
 
 
 //recap again on 17th Oct 2025 (Friday - winter Spring Sem5  IITP 3rd year after ISRO Meghalaya Dehradun)
+//also recap on 9th Nov 2025 (Sunday) C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\0_Arjuna_CP\D41_Onward_Sem5\q30_countKdiff.cpp 
+
+
 
 #include <iostream>
 using namespace std;

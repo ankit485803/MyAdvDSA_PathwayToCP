@@ -1,4 +1,18 @@
 
+
+
+/*
+recap on 9th Nov 2025 (Sunday - EndSem5 IITP 3rd Year commingSoon)
+
+
+
+
+
+
+*/
+
+
+
 #include <iostream>
 using namespace std;
 
@@ -10,11 +24,20 @@ node in the sequence.
  The most commonly used types of linked lists are singly linked lists, doubly linked lists, and circular linked lists.
 
 
+
+hm directly kisi bhi node ko access nahi kar sakte LinkedList mai like Array TC=O(1) yaha pe aapke node access karo ge TC=O(n) mai worstCase mai
+
+
+
+
+
 Four major function of LL:
 (i) push front
 (ii) push back
 (iii) pop front: which delete the value from front side of LL
 (iv) pop back
+
+
 
 
 */

@@ -11,6 +11,10 @@ using namespace std;
 
 it stores the data in random order and any elem can print any times,  can't duplicate value
 
+recap on 9th Nov 2025 (Sunday) C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\0_Arjuna_CP\D41_Onward_Sem5\q30_countKdiff.cpp 
+very imp prop of unordered_map() jo kabhi bhi duplicateValue nahi rakhta hai Bhai okkk
+
+
 
 */
 
