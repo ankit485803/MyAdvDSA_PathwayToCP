@@ -169,19 +169,20 @@ int main() {
     //create one list
     List l1;
 
-    // l1.push_front(1);
-    // l1.push_front(2);
-    // l1.push_front(3);
-    // l1.printLL();
+    l1.push_front(1);
+    l1.push_front(2);
+    l1.push_front(3);
+    l1.printLL();
 
-    // l1.push_back(45);
-    // l1.printLL();
+    l1.push_back(45);
+    l1.printLL();
 
-    // l1.pop_front();
-    // l1.printLL();
+    l1.pop_front();
+    l1.printLL();
 
-    // l1.pop_back();
-    // l1.printLL();
+    l1.pop_back();
+    l1.printLL();
+    
 
     l1.push_front(3);             
     l1.push_front(2);             
@@ -190,7 +191,7 @@ int main() {
     l1.printLL();
 
     l1.insert(49, 1);  //insert val 49 at position 1st index
-    cout << l1.search(2) << endl;
+    //cout << l1.search(2) << endl;
     
 
 

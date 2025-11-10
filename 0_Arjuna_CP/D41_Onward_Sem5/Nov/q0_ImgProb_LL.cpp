@@ -39,5 +39,10 @@ qno 234  https://leetcode.com/problems/palindrome-linked-list/description/
 
 
 
+day2 ka
+qno 24  https://leetcode.com/problems/swap-nodes-in-pairs/description/
+
+install gcc  compiler https://sourceforge.net/projects/mingw/
+
 
 */
