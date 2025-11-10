@@ -9,6 +9,9 @@
 */
 
 
+
+
+
 #include <iostream>
 using namespace std;
 
@@ -62,7 +65,7 @@ public:
     }
 
 
-    void push_back(int val) {
+    void push_back(int val) {   //O(1)
         Node* newNode = new Node(val);
 
         if(head == NULL) {
@@ -73,7 +76,7 @@ public:
         }
     }
 
-    void pop_front() {
+    void pop_front() {   //O(1)
         if(head == NULL) {
             cout << "LL is empty";
             return;
@@ -86,13 +89,13 @@ public:
         }
     }
 
-    void pop_back() {
+    void pop_back() {    //O(n)
         if(head == NULL) {
             cout << "LL is empty";
             return;
         } else {
             Node* temp = head;
-            while(temp->next != tail) {  //search karo kab tak milta hai tail
+            while(temp->next != tail) {  //search prevNode karo kab tak milta hai tail
                 temp = temp->next;
             }
             temp->next = NULL;
@@ -101,11 +104,40 @@ public:
         }
     }
 
+    void insert(int val, int pos) {   //O(n)
+        //case1: LessThanZero
+        if(pos < 0) {
+            cout << "Invalid position \n";
+            return;  //kuch mat karo
+        }
+
+        //case2: eqToZero
+        if(pos == 0) {
+            push_front(val);
+            return;
+        }
+
+        //case3: rest of the cases
+        Node* temp = head;
+
+        for(int i=0; i<pos-1; i++) {
+            if(temp == NULL) {  //extraCheck for if position greater thanSizeof LL
+                cout << "Invalid position";
+                return;
+            }
+
+        }
+        Node* newNode = new Node(val);
+        newNode->next = temp->next;
+        temp->next = newNode;
+
+    }
 
 
 
 
-    void printLL() {
+
+    void printLL() {   //O(n)
         Node* temp = head;
 
         while(temp != NULL) {
@@ -113,6 +145,22 @@ public:
             temp = temp->next;
         }
         cout << "NULL" << endl;
+    }
+
+
+    int search(int key) {  //O(n) time
+        Node* temp = head;
+        int idx = 0;
+
+        while(temp != NULL) {
+            if(temp->data == key) {
+                return idx;
+            }
+            temp = temp->next;
+            idx++;
+
+        }
+        return -1;
     }
 
 
@@ -131,20 +179,29 @@ int main() {
     //create one list
     List l1;
 
-    l1.push_front(1);
-    l1.push_front(2);
-    l1.push_front(3);
+    // l1.push_front(1);
+    // l1.push_front(2);
+    // l1.push_front(3);
+    // l1.printLL();
 
+    // l1.push_back(45);
+    // l1.printLL();
+
+    // l1.pop_front();
+    // l1.printLL();
+
+    // l1.pop_back();
+    // l1.printLL();
+
+    l1.push_front(3);             
+    l1.push_front(2);             
+    l1.push_front(1);     
+    
     l1.printLL();
 
-    l1.push_back(45);
-    l1.printLL();
-
-    l1.pop_front();
-    l1.printLL();
-
-    l1.pop_back();
-    l1.printLL();
+    l1.insert(49, 1);  //insert val 49 at position 1st index
+    cout << l1.search(2) << endl;
+    
 
 
     return 0;
