@@ -45,4 +45,9 @@ qno 24  https://leetcode.com/problems/swap-nodes-in-pairs/description/
 install gcc  compiler https://sourceforge.net/projects/mingw/
 
 
+day3
+qno  2181  https://leetcode.com/problems/merge-nodes-in-between-zeros/description/
+
+
+
 */

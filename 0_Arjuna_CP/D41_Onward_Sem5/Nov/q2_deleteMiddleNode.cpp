@@ -207,7 +207,6 @@ public:
         }
         //deleteMiddleNode
         prev->next = slow->next;
-
         return head;
     }
 };

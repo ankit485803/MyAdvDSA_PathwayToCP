@@ -1,5 +1,20 @@
 
 
+ //step1: calculateSizeLL
+        int iterativeSizeLL(ListNode* head) {
+            int sizeLL = 0;
+            Node* current = head;  //startWithHead
+
+            while(current != nullptr) {
+                sizeLL ++;
+                current = current->next;
+            }
+            return sizeLL;
+        }
+
+
+
+
 /*
 
 9th Nov 2025 (Sunday - Sem5 IITP 3rd year ending semPaper)
