@@ -48,6 +48,6 @@ install gcc  compiler https://sourceforge.net/projects/mingw/
 day3
 qno  2181  https://leetcode.com/problems/merge-nodes-in-between-zeros/description/
 
-
+qno 2130  https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/
 
 */
