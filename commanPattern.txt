@@ -76,7 +76,16 @@ rfind(sub, 0) == 0 → means “does this string start with sub?”
 rfind() by itself → “find me the last occurrence of sub.”
 
 
-12.
+12.  prefix-Suffix method
+
+Prefix based problems approach:   leftSum[i] = leftSum[i-1] + nums[i-1]  and similarly rightSum
+0_Arjuna_CP\D41_Onward_Sem5\Nov\q7_partitionList_minOperations_prefixLeftRightSum.cpp
+
+
+
+
+13.
+
 
 
 
