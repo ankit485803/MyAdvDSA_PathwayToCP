@@ -52,4 +52,9 @@ qno 2130  https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/descri
 
 
 
+day4
+qno 21  https://leetcode.com/problems/merge-two-sorted-lists/description/
+
+
+
 */
