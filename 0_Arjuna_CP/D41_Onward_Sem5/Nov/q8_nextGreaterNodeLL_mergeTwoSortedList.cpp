@@ -587,3 +587,92 @@ Each integer in nums will appear twice, only two integers will appear once.
 
 
 */
+
+class Solution {
+public:
+    vector<int> singleNumber(vector<int>& nums) {
+        int xorResult = 0;
+
+        //step1: find xor of allElem
+        for(int num : nums) {
+            xorResult ^= num;
+        }
+
+        //step2: Find the rightmost set bit (the lowest bit where the two numbers differ)
+        //int diffBit = xorResult & -xorResult;
+        //int diffBit = xorResult & (xorResult ^ (xorResult - 1));
+        int diffBit = xorResult & ~(xorResult - 1);
+
+
+
+        //step3:  Divide numbers into two groups and XOR within each group
+        int n1 = 0, n2 = 0;
+        for(int num : nums) {
+            if(num & diffBit) {
+                n1 ^= num;  // Group where the bit is set
+            } else {
+                n2 ^= num;  // Group where the bit is not set
+            }
+        }
+
+        //step4: return two uniqueNo
+        return {n1, n2};
+    }
+};
+
+
+#include <unordered_set>
+#include <vector>
+using namespace std;
+
+class Solution {
+public:
+    vector<int> singleNumber(vector<int>& nums) {  //TC=O(n)=SC
+        unordered_set<int> seen;
+
+        for (int num : nums) {
+            // If the number is already in the set, remove it
+            if (seen.count(num)) {
+                seen.erase(num);
+            } else {
+                // Otherwise, add it to the set
+                seen.insert(num);
+            }
+        }
+
+        // Convert the set to a vector and return it
+        return vector<int>(seen.begin(), seen.end());
+    }
+};
+
+
+class Solution {
+public:
+    vector<int> singleNumber(vector<int>& nums) {  //TC=O(n logN), SC=O(1)
+        vector<int> ans(2);
+        int idx = 0;
+
+        int n = nums.size();
+        sort(nums.begin(), nums.end());
+
+        int count = 1; 
+
+        for (int i = 1; i < n; i++) {
+            if (nums[i - 1] == nums[i]) {
+                count++; 
+            } else {
+                if (count == 1) {
+                    ans[idx++] = nums[i - 1]; // Store the unique number
+                }
+                count = 1; // Reset the count for the next number
+            }
+        }
+
+        // Handle the last number in the array
+        if (count == 1) {
+            ans[idx] = nums[n - 1];
+        }
+
+        return ans;
+    }
+};
