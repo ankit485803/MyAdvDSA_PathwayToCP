@@ -57,4 +57,13 @@ qno 21  https://leetcode.com/problems/merge-two-sorted-lists/description/
 
 
 
+day5
+
+qno 142  https://leetcode.com/problems/linked-list-cycle-ii/description/
+
+qno 3234  https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/description/
+qno 2274  https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/description/
+
+
+
 */
