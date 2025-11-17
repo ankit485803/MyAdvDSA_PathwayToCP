@@ -224,3 +224,200 @@ public:
 
 
 
+/*
+
+qno 2536  https://leetcode.com/problems/increment-submatrices-by-one/description/
+
+2536. Increment Submatrices by One
+Medium
+Topics
+
+Companies
+Hint
+You are given a positive integer n, indicating that we initially have an n x n 0-indexed integer matrix mat filled with zeroes.
+
+You are also given a 2D integer array query. For each query[i] = [row1i, col1i, row2i, col2i], you should do the following operation:
+
+Add 1 to every element in the submatrix with the top left corner (row1i, col1i) and the bottom right corner (row2i, col2i). That is, add 1 to mat[x][y] for all row1i <= x <= row2i and col1i <= y <= col2i.
+Return the matrix mat after performing every query.
+
+ 
+
+Example 1:
+
+
+Input: n = 3, queries = [[1,1,2,2],[0,0,1,1]]
+Output: [[1,1,0],[1,2,1],[0,1,1]]
+Explanation: The diagram above shows the initial matrix, the matrix after the first query, and the matrix after the second query.
+- In the first query, we add 1 to every element in the submatrix with the top left corner (1, 1) and bottom right corner (2, 2).
+- In the second query, we add 1 to every element in the submatrix with the top left corner (0, 0) and bottom right corner (1, 1).
+Example 2:
+
+
+Input: n = 2, queries = [[0,0,1,1]]
+Output: [[1,1],[1,1]]
+Explanation: The diagram above shows the initial matrix and the matrix after the first query.
+- In the first query we add 1 to every element in the matrix.
+ 
+
+Constraints:
+
+1 <= n <= 500
+1 <= queries.length <= 104
+0 <= row1i <= row2i < n
+0 <= col1i <= col2i < n
+
+
+
+*/
+
+
+class Solution {
+public:
+    vector<vector<int>> rangeAddQueries(int n, vector<vector<int>>& queries) { // TC=O(Query * n^2), SC=O(n^2)
+        
+        //step1: intitlize mat (n*n) with zeros
+        vector<vector<int>> mat(n, vector<int> (n, 0));
+
+        //step2: processEachQuery
+        for(const auto& query : queries) {
+            int row1 = query[0], col1 = query[1], row2 = query[2], col2 = query[3];
+
+            //Loop through the submatrix and add 1 to eachElem 
+            for(int i=row1; i<=row2; ++i) {
+                for(int j=col1; j<=col2; ++j) {
+                    mat[i][j] += 1;
+                }
+            }
+        }
+
+        //step3: finalReturnModifiedMat
+        return mat;
+    }
+};
+
+
+
+class Solution {
+public:
+    vector<vector<int>> rangeAddQueries(int n, vector<vector<int>>& queries) {  //optimizedUisngPrefixSum approach TC=O(Query + n^2), SC=O(n^2)
+        // Step 1: Create a difference matrix (diff) of size (n+1)x(n+1)
+        vector<vector<int>> diff(n + 1, vector<int>(n + 1, 0));
+
+        // Step 2: Apply the difference array technique for each query
+        for (const auto& query : queries) {
+            int row1 = query[0], col1 = query[1], row2 = query[2], col2 = query[3];
+
+            // Increment the top-left corner
+            diff[row1][col1] += 1;
+
+            // Decrement the top-right corner (one column past the right boundary)
+            if (col2 + 1 < n) {
+                diff[row1][col2 + 1] -= 1;
+            }
+
+            // Decrement the bottom-left corner (one row past the bottom boundary)
+            if (row2 + 1 < n) {
+                diff[row2 + 1][col1] -= 1;
+            }
+
+            // Increment the bottom-right corner (to fix the overlap)
+            if (row2 + 1 < n && col2 + 1 < n) {
+                diff[row2 + 1][col2 + 1] += 1;
+            }
+        }
+
+        // Step 3: Apply the difference matrix to get the final result
+
+        // First pass: Apply the prefix sum along rows
+        for (int i = 0; i < n; ++i) {
+            for (int j = 1; j < n; ++j) {
+                diff[i][j] += diff[i][j - 1];
+            }
+        }
+
+        // Second pass: Apply the prefix sum along columns
+        for (int j = 0; j < n; ++j) {
+            for (int i = 1; i < n; ++i) {
+                diff[i][j] += diff[i - 1][j];
+            }
+        }
+
+        // Step 4: Return the result (which is stored in the `diff` matrix)
+        vector<vector<int>> result(n, vector<int>(n));
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < n; ++j) {
+                result[i][j] = diff[i][j];
+            }
+        }
+
+        return result;
+    }
+};
+
+
+
+/*
+
+qno 1437  https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/description/?envType=daily-question&envId=2025-11-17
+
+
+1437. Check If All 1's Are at Least Length K Places Away
+Easy
+Topics
+
+Companies
+Hint
+Given an binary array nums and an integer k, return true if all 1's are at least k places away from each other, otherwise return false.
+
+ 
+
+Example 1:
+
+
+Input: nums = [1,0,0,0,1,0,0,1], k = 2
+Output: true
+Explanation: Each of the 1s are at least 2 places away from each other.
+Example 2:
+
+
+Input: nums = [1,0,0,1,0,1], k = 2
+Output: false
+Explanation: The second 1 and third 1 are only one apart from each other.
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= k <= nums.length
+nums[i] is 0 or 1
+
+
+
+*/
+
+
+class Solution {
+public:
+    bool kLengthApart(vector<int>& nums, int k) {
+        int lastOneIndex = -1;  // To track the position of the last '1'
+        
+        for (int i = 0; i < nums.size(); ++i) {
+            if (nums[i] == 1) {
+                if (lastOneIndex == -1) {
+                    // This is the first '1', so no need to compare
+                    lastOneIndex = i;
+                } else {
+                    // Check the distance from the last '1'
+                    if (i - lastOneIndex < k) {
+                        return false;  // Found two '1's too close to each other
+                    }
+                    // Update the last '1' position
+                    lastOneIndex = i;
+                }
+            }
+        }
+        
+        return true; 
+    }
+};

@@ -65,5 +65,9 @@ qno 3234  https://leetcode.com/problems/count-the-number-of-substrings-with-domi
 qno 2274  https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/description/
 
 
+day6
+qno 2536  https://leetcode.com/problems/increment-submatrices-by-one/description/
+
+
 
 */
