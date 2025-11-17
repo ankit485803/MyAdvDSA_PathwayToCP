@@ -90,8 +90,8 @@ public:
 
 /*
 
-qno 164  https://leetcode.com/problems/maximum-gap/
 
+qno 164  https://leetcode.com/problems/maximum-gap/
 
 
 164. Maximum Gap
@@ -124,7 +124,30 @@ Constraints:
 
 
 
-method2: 
+method2: buckerSortApproach
+Bucket Sort is great for uniformly distributed data, especially for floating-point numbers within a known range. 
+It can be inefficient when the data isn’t uniformly distributed.
+
+Radix Sort is typically used for sorting large datasets of integers or strings where the number of digits (or characters) is small relative to the number of elements. 
+It's very efficient when sorting integers or fixed-length strings.
+
+In competitive programming and DSA, both algorithms are useful depending on the problem constraints. 
+Radix Sort is commonly used in problems involving large datasets with numeric values, while Bucket Sort can be a 
+good choice for problems involving specific ranges or distributions.
+
+
+While both are non-comparative sorting algorithms that use a distribute and collect approach with buckets, 
+the key difference is that Bucket Sort sorts each bucket individually after distribution,
+ while Radix Sort repeatedly buckets elements by significant digit without sorting the buckets until all digits are processed. 
+Radix sort uses a stable sorting algorithm (often Counting Sort or a form of Bucket Sort) as a subroutine in each pass.
+
+
+Note: when to use BuckeSort:
+        When the Data is Uniformly Distributed Over a Known Range
+        When Data Distribution is Known
+    
+    when to use RadixSort: When Sorting Integers or Fixed-Length Strings, When the Range of Numbers is Large but the Number of Digits is Small:    
+
 
 
 */
@@ -147,6 +170,57 @@ public:
         return maxDiff;
     }
 };
+
+
+
+class Solution {
+public:
+    int maximumGap(vector<int>& nums) { //TC=O(n)=SC due to space req for backet
+        int n = nums.size();
+        
+        if (n < 2) return 0;  //edgeCase
+
+        int minVal = *min_element(nums.begin(), nums.end());
+        int maxVal = *max_element(nums.begin(), nums.end());
+
+        // If the range is too small, there can be no gap
+        if (maxVal == minVal) return 0;
+
+        // Bucket size: roughly the gap we expect between two consecutive buckets
+        int bucketSize = max(1, (maxVal - minVal) / (n - 1));
+
+        // Number of buckets is the range divided by the bucket size
+        int numBuckets = (maxVal - minVal) / bucketSize + 1;
+
+
+        vector<pair<int, int>> buckets(numBuckets, {INT_MAX, INT_MIN}); 
+
+
+        // Place each number in the appropriate bucket
+        for (int num : nums) {
+            int bucketIdx = (num - minVal) / bucketSize;
+            buckets[bucketIdx].first = min(buckets[bucketIdx].first, num);  
+            buckets[bucketIdx].second = max(buckets[bucketIdx].second, num); // Update max
+        }
+
+
+
+        int maxGap = 0;
+        int prevMax = minVal;
+
+        for (auto& bucket : buckets) {
+            // Skip empty buckets
+            if (bucket.first == INT_MAX && bucket.second == INT_MIN) continue;
+
+
+            maxGap = max(maxGap, bucket.first - prevMax);
+            prevMax = bucket.second;  
+        }
+
+        return maxGap;
+    }
+};
+
 
 
 
