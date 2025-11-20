@@ -178,3 +178,253 @@ public:
         return count;
     }
 };
+
+
+
+
+/*
+
+
+qno  2351  https://leetcode.com/problems/first-letter-to-appear-twice/description/
+
+
+
+Code
+Testcase
+Testcase
+Test Result
+2351. First Letter to Appear Twice
+Easy
+Topics
+
+Companies
+Hint
+Given a string s consisting of lowercase English letters, return the first letter to appear twice.
+
+Note:
+
+A letter a appears twice before another letter b if the second occurrence of a is before the second occurrence of b.
+s will contain at least one letter that appears twice.
+ 
+
+Example 1:
+
+Input: s = "abccbaacz"
+Output: "c"
+Explanation:
+The letter 'a' appears on the indexes 0, 5 and 6.
+The letter 'b' appears on the indexes 1 and 4.
+The letter 'c' appears on the indexes 2, 3 and 7.
+The letter 'z' appears on the index 8.
+The letter 'c' is the first letter to appear twice, because out of all the letters the index of its second occurrence is the smallest.
+Example 2:
+
+Input: s = "abcdd"
+Output: "d"
+Explanation:
+The only letter that appears twice is 'd' so we return 'd'.
+ 
+
+Constraints:
+
+2 <= s.length <= 100
+s consists of lowercase English letters.
+s has at least one repeated letter.
+
+
+*/
+
+class Solution {
+public:
+    char repeatedCharacter(string s) {
+        
+        //byObservation: consecutive same char is ans
+
+        //iterate eachChar in str and find consective
+        for(int i=0; i<s.length(); i++) {
+            if(s[i] == s[i+1]) {  //sameChar
+                return s[i];
+            }
+        }
+    }
+};
+
+//this is firstApproach - Your current solution is incorrect because the problem does not guarantee that the first repeated letter appears consecutively.
+
+
+class Solution {
+public:
+    char repeatedCharacter(string s) { //TC=O(n)
+        
+        unordered_set<char> seen;  //O(1) SC because only 26 char in alphabet
+        for(char c : s) {
+            if(seen.count(c)) {  //secound Occurence
+                return c;
+            }
+            seen.insert(c);
+        }
+
+        return ' ';  //won't reach here
+
+    }
+};
+
+
+
+class Solution {
+public:
+    char repeatedCharacter(string s) {  //TC=O(n), SC=O(1) using Arr and method2: using set
+        int freq[26] = {0};
+
+        for (char c : s) {
+            if (freq[c - 'a'] == 1)
+                return c;
+            freq[c - 'a']++;
+        }
+        return ' ';
+    }
+};
+
+
+
+/*
+
+qno 434  https://leetcode.com/problems/number-of-segments-in-a-string/description/
+
+
+434. Number of Segments in a String
+Easy
+Topics
+
+Companies
+Given a string s, return the number of segments in the string.
+
+A segment is defined to be a contiguous sequence of non-space characters.
+
+ 
+
+Example 1:
+
+Input: s = "Hello, my name is John"
+Output: 5
+Explanation: The five segments are ["Hello,", "my", "name", "is", "John"]
+Example 2:
+
+Input: s = "Hello"
+Output: 1
+ 
+
+Constraints:
+
+0 <= s.length <= 300
+s consists of lowercase and uppercase English letters, digits, or one of the following characters "!@#$%^&*()_+-=',.:".
+The only space character in s is ' '.
+
+
+*/
+
+
+class Solution {
+public:
+    int countSegments(string s) {
+        int count = 0;
+        int n = s.length();
+        
+        for (int i = 0; i < n; i++) {
+            // A segment starts when current char is not space
+            // and either it's the first char or previous char was space
+            if (s[i] != ' ' && (i == 0 || s[i - 1] == ' ')) {
+                count++;
+            }
+        }
+        
+        return count;
+    }
+};
+
+
+
+
+/*
+
+qno 717  https://leetcode.com/problems/1-bit-and-2-bit-characters/
+
+
+717. 1-bit and 2-bit Characters
+Solved
+Easy
+Topics
+
+Companies
+Hint
+We have two special characters:
+
+The first character can be represented by one bit 0.
+The second character can be represented by two bits (10 or 11).
+Given a binary array bits that ends with 0, return true if the last character must be a one-bit character.
+
+ 
+
+Example 1:
+
+Input: bits = [1,0,0]
+Output: true
+Explanation: The only way to decode it is two-bit character and one-bit character.
+So the last character is one-bit character.
+Example 2:
+
+Input: bits = [1,1,1,0]
+Output: false
+Explanation: The only way to decode it is two-bit character and two-bit character.
+So the last character is not one-bit character.
+ 
+
+Constraints:
+
+1 <= bits.length <= 1000
+bits[i] is either 0 or 1.
+
+
+
+*/
+
+
+class Solution {
+public:
+    bool isOneBitCharacter(vector<int>& bits) {
+        int i = 0;
+        // Traverse the bits array
+        while (i < bits.size() - 1) {
+            // Move forward: if bits[i] is 0, move 1 step; if 1, move 2 steps
+            i += bits[i] + 1;
+        }
+        // If we end on the last bit, it's a one-bit character
+        return i == bits.size() - 1;
+    }
+};
+
+// greedy approach effectively determines whether the last character is a one-bit character by iterating through the bits with simple conditions, making it both efficient and easy to understand.
+
+// time complex = O(n), space = O(1)
+
+
+class Solution {
+public:
+    bool helper(vector<int>& bits, int index) {  //bruteFoce tc=O(2^(n/2)), sc=O(1)
+        int n = bits.size();
+        if (index == n - 1) return true;  // last bit is a one-bit character
+        if (index >= n) return false;     // went past the array
+        
+        if (bits[index] == 0) {
+            // 1-bit character
+            return helper(bits, index + 1);
+        } else {
+            // 2-bit character
+            return helper(bits, index + 2);
+        }
+    }
+    
+    bool isOneBitCharacter(vector<int>& bits) {
+        return helper(bits, 0);
+    }
+};
