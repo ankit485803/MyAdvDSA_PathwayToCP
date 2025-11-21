@@ -371,6 +371,9 @@ Efficient Check:
     If we can find s inside s + s (excluding the first and last character), then s is a repeated substring. This reduces the problem to a simple substring search.
 
 
+
+    
+Note: In C++, string::npos is a special constant used to represent an invalid position or "not found" value when working with string operations, particularly in the find method.
     
 */
 
