@@ -94,10 +94,15 @@ Radix Sort is typically used for sorting large datasets of integers or strings w
 It's very efficient when sorting integers or fixed-length strings.
 
 
-14.
+14. StrLengthProp-ConcateTrick to check repeatedStrPattern 
+
+ 0_Arjuna_CP\D41_Onward_Sem5\Nov\q13_reorderList_sortList_IsSeq_repeatedStrPattern.cpp
+
+qno 459  https://leetcode.com/problems/repeated-substring-pattern/description/
 
 
 
+15.  
 
 
 
