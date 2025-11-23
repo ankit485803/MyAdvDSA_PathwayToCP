@@ -36,6 +36,19 @@ but can be configured differently depending on the setup.
 
 
 
+Que. if i do normal push this also use LFS if not big file video 
+
+If you're pushing files that aren't large or binary (like video files), Git will not use Git LFS by default. 
+Git LFS is only triggered for files that match patterns specified in the .gitattributes file or explicitly added to LFS.
+
+How LFS is used:
+        Normal Push (without LFS): If the files are regular text-based files (such as .cpp, .py, .txt, etc.), Git handles them as usual. 
+        You would just commit and push these files directly into the repository.
+        Files Tracked by LFS: If the files are large (like videos, images, or large datasets) and match the LFS patterns in .gitattributes, they will be handled by LFS, even when doing a normal git push.
+
+
+        
+
 */
 
 
