@@ -1,6 +1,52 @@
 
+/*
 
- 
+Celebrating 100 days of DSA problem-solving on LeetCode! 🚀 
+
+On 23rd Nov 2025 (Sunday - Sem5 IITP 3rd year endSemPaper)
+In this video, I reflect on my journey and share how I learned Git LFS (Large File Storage) to manage large files. Git LFS lets you push files up to 5 GB, while GitHub's regular file limit is 50 MB. 
+ #LeetCode #DSA #GitLFS
+
+
+
+
+If you want to keep large files in your Git repository, 
+consider using Git LFS (Large File Storage), which is designed for handling large files like videos, datasets, etc.
+Install Git LFS if you haven't already:
+
+
+
+Q. how much the max file size can handle by Git LFS and allowed to push
+Ans: Git LFS can handle files up to 5 GB.
+GitHub allows 1 GB of storage and 1 GB of bandwidth per month for free-tier accounts, with additional storage 
+available for purchase.
+
+
+
+Git LFS (Large File Storage) itself does not impose a strict maximum file size limit, but the hosting provider you use for your Git repository will have specific limits for files tracked by LFS.
+Common LFS File Size Limits by Hosting Provider:
+GitHub:
+        GitHub Free and Pro: 2 GB per file
+        GitHub Team: 4 GB per file
+        GitHub Enterprise Cloud: 5 GB per file
+        Azure Repos: 5 GB per file
+        Bitbucket Cloud: 5 GB per file
+Other Platforms/Self-Hosted Solutions (e.g., GitLab): These may also have similar limits, often around 5 GB per file, 
+but can be configured differently depending on the setup.
+
+
+
+*/
+
+
+
+
+git lfs install
+git lfs track "*.mp4"
+ git add .gitattributes
+git commit -m "Track .mp4 files with Git LFS"
+git push origin main
+
 
 
 
