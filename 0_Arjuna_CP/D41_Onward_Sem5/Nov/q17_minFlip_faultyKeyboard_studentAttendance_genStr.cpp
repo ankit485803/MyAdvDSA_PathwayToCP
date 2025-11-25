@@ -260,3 +260,235 @@ public:
 
     }
 };
+
+
+
+
+/*
+
+qno 1374  https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/description/
+
+
+1374. Generate a String With Characters That Have Odd Counts
+Easy
+Topics
+
+Companies
+Hint
+Given an integer n, return a string with n characters such that each character in such string occurs an odd number of times.
+
+The returned string must contain only lowercase English letters. If there are multiples valid strings, return any of them.  
+
+ 
+
+Example 1:
+
+Input: n = 4
+Output: "pppz"
+Explanation: "pppz" is a valid string since the character 'p' occurs three times and the character 'z' occurs once. Note that there are many other valid strings such as "ohhh" and "love".
+Example 2:
+
+Input: n = 2
+Output: "xy"
+Explanation: "xy" is a valid string since the characters 'x' and 'y' occur once. Note that there are many other valid strings such as "ag" and "ur".
+Example 3:
+
+Input: n = 7
+Output: "holasss"
+ 
+
+Constraints:
+
+1 <= n <= 500
+
+
+*/
+
+
+class Solution {
+public:
+    string generateTheString(int n) {  //tc=O(n) = sc, space used to store the result strin
+        string result = "";
+        
+        // If n is odd, use a single character repeated n times
+        if (n % 2 == 1) {
+            result = string(n, 'a');  
+        }
+
+        // If n is even, alternate between 'a' and 'b'
+        else {
+            result = string(n - 1, 'a') + "b";  // Fill with 'a's, and add a single 'b'
+        }
+        
+        return result;
+    }
+};
+
+
+
+/*
+
+
+qno 3754  https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/
+
+
+3754. Concatenate Non-Zero Digits and Multiply by Sum I
+Easy
+premium lock icon
+Companies
+Hint
+You are given an integer n.
+
+Form a new integer x by concatenating all the non-zero digits of n in their original order. If there are no non-zero digits, x = 0.
+
+Let sum be the sum of digits in x.
+
+Return an integer representing the value of x * sum.
+
+ 
+
+Example 1:
+
+Input: n = 10203004
+
+Output: 12340
+
+Explanation:
+
+The non-zero digits are 1, 2, 3, and 4. Thus, x = 1234.
+The sum of digits is sum = 1 + 2 + 3 + 4 = 10.
+Therefore, the answer is x * sum = 1234 * 10 = 12340.
+Example 2:
+
+Input: n = 1000
+
+Output: 1
+
+Explanation:
+
+The non-zero digit is 1, so x = 1 and sum = 1.
+Therefore, the answer is x * sum = 1 * 1 = 1.
+ 
+
+Constraints:
+
+0 <= n <= 109
+
+
+*/
+
+
+
+
+class Solution {
+public:
+    long long sumAndMultiply(int n) {   //TC=O(n, digits)
+        long long x = 0;  
+        int sum = 0;   
+
+
+        if (n == 0) {
+            return 0; 
+        }
+
+        vector<int> nonZeroDigits;
+
+
+        while (n > 0) {
+            int digit = n % 10;  // Get the last digit of n
+            n /= 10;             // Remove the last digit from n
+
+            if (digit != 0) {    
+                nonZeroDigits.push_back(digit); 
+                sum += digit;            
+            }
+        }
+
+        // Build x by concatenating digits in the correct order
+        for (int i = nonZeroDigits.size() - 1; i >= 0; --i) {
+            x = x * 10 + nonZeroDigits[i];  
+        }
+
+
+        return x * sum;
+    }
+};
+
+
+
+
+/*
+
+
+qno 1408  https://leetcode.com/problems/string-matching-in-an-array/description/
+
+
+
+Code
+Testcase
+Testcase
+Test Result
+1408. String Matching in an Array
+Easy
+Topics
+
+Companies
+Hint
+Given an array of string words, return all strings in words that are a substring of another word. You can return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: words = ["mass","as","hero","superhero"]
+Output: ["as","hero"]
+Explanation: "as" is substring of "mass" and "hero" is substring of "superhero".
+["hero","as"] is also a valid answer.
+Example 2:
+
+Input: words = ["leetcode","et","code"]
+Output: ["et","code"]
+Explanation: "et", "code" are substring of "leetcode".
+Example 3:
+
+Input: words = ["blue","green","bu"]
+Output: []
+Explanation: No string of words is substring of another string.
+ 
+
+Constraints:
+
+1 <= words.length <= 100
+1 <= words[i].length <= 30
+words[i] contains only lowercase English letters.
+All the strings of words are unique.
+
+
+*/
+
+
+class Solution {
+public:
+    vector<string> stringMatching(vector<string>& words) {  
+        
+
+        vector<string> result;
+
+        for (int i = 0; i < words.size(); i++) {
+            
+            // Inner loop to check if the current word is a substring of any other word
+            for (int j = 0; j < words.size(); j++) {
+                
+                if (i != j) {
+                    if (words[j].find(words[i]) != string::npos) {
+                    
+                        result.push_back(words[i]);
+                        break;
+                    }
+                }
+            }
+        }
+
+        return result;
+    }
+};
