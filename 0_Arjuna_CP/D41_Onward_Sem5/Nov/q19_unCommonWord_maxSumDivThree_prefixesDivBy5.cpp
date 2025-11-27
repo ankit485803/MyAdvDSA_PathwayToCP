@@ -248,3 +248,208 @@ public:
 
 
 
+
+/*
+
+qno 1018  https://leetcode.com/problems/binary-prefix-divisible-by-5/description/
+
+
+1018. Binary Prefix Divisible By 5
+Easy
+Topics
+
+Companies
+Hint
+You are given a binary array nums (0-indexed).
+
+We define xi as the number whose binary representation is the subarray nums[0..i] (from most-significant-bit to least-significant-bit).
+
+For example, if nums = [1,0,1], then x0 = 1, x1 = 2, and x2 = 5.
+Return an array of booleans answer where answer[i] is true if xi is divisible by 5.
+
+ 
+
+Example 1:
+
+Input: nums = [0,1,1]
+Output: [true,false,false]
+Explanation: The input numbers in binary are 0, 01, 011; which are 0, 1, and 3 in base-10.
+Only the first number is divisible by 5, so answer[0] is true.
+Example 2:
+
+Input: nums = [1,1,1]
+Output: [false,false,false]
+ 
+
+Constraints:
+
+1 <= nums.length <= 105
+nums[i] is either 0 or 1.
+
+
+*/
+
+
+
+class Solution {
+public:
+    vector<bool> prefixesDivBy5(vector<int>& nums) {  //tc=O(n)
+         
+        vector<bool> result;  //SC=O(n)
+        int curr = 0;
+
+        for(int num : nums) {
+            curr = (curr *2 + num) % 5;  // Update the current number (mod 5)
+            result.push_back(curr == 0);
+        }
+
+        return result;
+    }
+};
+
+
+
+
+
+
+
+/*
+
+
+qno 859  https://leetcode.com/problems/buddy-strings/description/
+
+859. Buddy Strings
+Attempted
+Easy
+Topics
+
+Companies
+Given two strings s and goal, return true if you can swap two letters in s so the result is equal to goal, otherwise, return false.
+
+Swapping letters is defined as taking two indices i and j (0-indexed) such that i != j and swapping the characters at s[i] and s[j].
+
+For example, swapping at indices 0 and 2 in "abcd" results in "cbad".
+ 
+
+Example 1:
+
+Input: s = "ab", goal = "ba"
+Output: true
+Explanation: You can swap s[0] = 'a' and s[1] = 'b' to get "ba", which is equal to goal.
+Example 2:
+
+Input: s = "ab", goal = "ab"
+Output: false
+Explanation: The only letters you can swap are s[0] = 'a' and s[1] = 'b', which results in "ba" != goal.
+Example 3:
+
+Input: s = "aa", goal = "aa"
+Output: true
+Explanation: You can swap s[0] = 'a' and s[1] = 'a' to get "aa", which is equal to goal.
+ 
+
+Constraints:
+
+1 <= s.length, goal.length <= 2 * 104
+s and goal consist of lowercase letters.
+
+
+
+*/
+
+class Solution {
+public:
+    bool buddyStrings(string s, string goal) { //tc = O(n) = sc
+        // If lengths are diff
+        if (s.length() != goal.length()) return false;
+
+        
+        // If strings are equal, check for at least two identical characters
+        if (s == goal) {
+            unordered_set<char> seen;
+            for (char c : s) {
+                if (seen.count(c)) return true;
+                seen.insert(c);
+            }
+            return false;
+        }
+        
+
+        // If strings are not equal, find the indices where they differ
+        vector<int> diffIndices;
+        for (int i = 0; i < s.length(); ++i) {
+            if (s[i] != goal[i]) {
+                diffIndices.push_back(i);
+            }
+        }
+
+        
+        // For the strings to become equal by one swap, we should have exactly two differences
+        if (diffIndices.size() != 2) return false;
+        
+        int i = diffIndices[0], j = diffIndices[1];
+        return s[i] == goal[j] && s[j] == goal[i];
+    }
+};
+
+
+
+/*
+
+qno 1528  https://leetcode.com/problems/shuffle-string/description/
+
+
+1528. Shuffle String
+Easy
+Topics
+
+Companies
+Hint
+You are given a string s and an integer array indices of the same length. The string s will be shuffled such that the character at the ith position moves to indices[i] in the shuffled string.
+
+Return the shuffled string.
+
+ 
+
+Example 1:
+
+
+Input: s = "codeleet", indices = [4,5,6,7,0,2,1,3]
+Output: "leetcode"
+Explanation: As shown, "codeleet" becomes "leetcode" after shuffling.
+Example 2:
+
+Input: s = "abc", indices = [0,1,2]
+Output: "abc"
+Explanation: After shuffling, each character remains in its position.
+ 
+
+Constraints:
+
+s.length == indices.length == n
+1 <= n <= 100
+s consists of only lowercase English letters.
+0 <= indices[i] < n
+All values of indices are unique.
+
+
+
+
+*/
+
+
+class Solution {
+public:
+    string restoreString(string s, vector<int>& indices) {  //TC=O(n)
+        int n = indices.size();
+        vector<char> result(n);  // Use a vector to store the shuffled string, sc=O(n)
+
+        // Place each character at the correct position
+        for (int i = 0; i < n; ++i) {
+            result[indices[i]] = s[i];
+        }
+
+        // Convert the result vector to a string  
+        return string(result.begin(), result.end());
+    }
+};
