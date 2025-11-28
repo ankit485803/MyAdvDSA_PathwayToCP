@@ -1,0 +1,81 @@
+
+
+⭐ Keynotes for Beginners Learning LaTeX (.tex Markup Language)]
+
+1. LaTeX is not a word processor — it’s a typesetting language
+
+    You write code, and LaTeX renders it into a clean, professional PDF.
+    Ideal for resumes, research papers, theses, reports, CVs.
+
+
+
+
+2. Everything is written in plain text
+    A .tex file is simply a text file with commands.
+    Example:
+    \textbf{Bold Text}
+
+
+
+3. Structure is created with commands
+    Documents are built from sections:
+    \section{Introduction}
+    \subsection{Background}
+
+
+
+4. Packages extend functionality
+        Use \usepackage{} to add new features:
+            geometry → change margins
+            hyperref → clickable links
+            enumitem → custom bullets
+            fontspec → custom fonts
+
+
+5. LaTeX compilers matter
+    pdfLaTeX → default, limited fonts
+    XeLaTeX → use system fonts (Times New Roman, etc.)
+    LuaLaTeX → advanced typesetting
+                 Resume templates usually need XeLaTeX.
+
+
+
+
+6. Everything is controlled with environments
+    Examples:
+    \begin{itemize}
+    \item Point 1
+    \item Point 2
+    \end{itemize}
+
+Produces bullet points.
+
+
+7. Precise control over formatting
+Instead of manual formatting like MS Word:
+    LaTeX defines spacing, alignment, indentation, and typography programmatically.
+    Ensures consistency across entire document.
+
+
+8. Templates save time
+You don’t start from zero — reusable templates exist for:
+    Resumes
+    Research papers
+    Journals (IEEE, ACM)
+    Assignments
+    Thesis/Dissertations
+A beginner only needs to edit text, not design layouts.
+
+
+
+9. LaTeX avoids formatting errors
+    No accidental:
+        Shifting margins
+        Broken headings
+        Wrong numbering
+        Misaligned bullets
+
+    LaTeX handles all formatting automatically.
+
+
+    

@@ -1,0 +1,21 @@
+
+
+
+https://github.com/sb2nov/resume/blob/master/sourabh_bajaj_resume.tex
+
+
+I am Sourabh, co-founder and CTO of Uplimit. Uplimit is a live online upskilling platform to help businesses and individuals 
+acquire the cutting-edge technical skills necessary to remain competitive in today's market. The Uplimit platform features
+ live online courses from top industry experts, a rich community of peers, and leverages technology to deliver high-quality
+  education with real career outcomes at scale.
+
+In my past life; I lead the personalization and data infrastructure teams at Neeva. Before that at Google Brain,
+ I worked on Tensorflow. Prior to Google; I was at Coursera working on data infrastructure and data products. 
+ I'm also a Georgia Tech and BITS Pilani alumni.
+
+
+
+ https://sourabhbajaj.com/
+
+https://uplimit.com/
+
