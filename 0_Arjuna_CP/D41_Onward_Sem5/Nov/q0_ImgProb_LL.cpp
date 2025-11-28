@@ -129,4 +129,14 @@ qno 2536  https://leetcode.com/problems/increment-submatrices-by-one/description
 
 
 
+
+
+
+
+some matrixProb
+qno 2435  https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/description/
+
+
+
+
 */
