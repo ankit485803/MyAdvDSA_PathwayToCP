@@ -47,6 +47,9 @@ How LFS is used:
         Files Tracked by LFS: If the files are large (like videos, images, or large datasets) and match the LFS patterns in .gitattributes, they will be handled by LFS, even when doing a normal git push.
 
 
+
+The -a flag in the git tag command stands for annotated tag. Annotated tags are stored as full objects in the Git database, which means they can contain metadata like the tagger’s name, email, and date, along with a message. 
+This is different from lightweight tags, which are just a reference to a commit.        
         
 
 */
@@ -60,6 +63,10 @@ git lfs track "*.mp4"
 git commit -m "Track .mp4 files with Git LFS"
 git push origin main
 
+
+git tag -a v1.7-KandeAlgoForSubarrSum-TeX-markupLang -m "TeX is a typesetting markupLang used by overleaf compiler (relativePath: 01_LeetCode/OverLeaf).  Kandane’s Algorithm efficiently finds the contiguous subarray with the largest sum in linear time.  " 
+git push --tags 
+git show v1.7-KandeAlgoForSubarrSum-TeX-markupLang
 
 
 

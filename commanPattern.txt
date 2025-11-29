@@ -102,7 +102,11 @@ qno 459  https://leetcode.com/problems/repeated-substring-pattern/description/
 
 
 
-15.  
+15.  Kadane's Algorithm is an efficient way to find the maximum sum of a contiguous subarray in a given array of integers. 
+It operates in O(n) time complexity, where n is the length of the array.
+
+    qno 3381  https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/
+    0_Arjuna_CP\D41_Onward_Sem5\Nov\q21_maxSubarrSum.cpp
 
 
 
