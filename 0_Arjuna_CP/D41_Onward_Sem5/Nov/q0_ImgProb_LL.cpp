@@ -52,6 +52,26 @@ The -a flag in the git tag command stands for annotated tag. Annotated tags are 
 This is different from lightweight tags, which are just a reference to a commit.        
         
 
+Git uses a parent-child relationship for commits. When you make a new commit, it points to the previous commit (its parent), 
+and this forms a linked list of commits in Git’s history.
+Commit f7691d4 is the new commit that was just created.
+The parent commit 439163a is the commit just before f7691d4.
+
+In Git, commits form a linked chain (a directed acyclic graph or DAG),
+ where each commit points back to its parent commit. This forms a history of changes.
+
+
+
+
+ A file with a .h extension is a header file used in C, C++, 
+ and Objective-C programming to contain declarations of functions, data types, and macros  (src: https://github.com/amanagr6697/TicTacToeLLD/blob/master/Board.h)
+
+
+ The time and space values you see in the GitHub repo are related to the performance metrics of the code for each problem, 
+ likely provided by a platform like LeetHub (which integrates GitHub with LeetCode solutions). src:  https://github.com/sharmaanuj334/DSA
+
+
+ 
 */
 
 
