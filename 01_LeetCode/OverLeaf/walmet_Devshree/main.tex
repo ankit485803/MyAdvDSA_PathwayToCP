@@ -1,0 +1,112 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{titlesec}
+\usepackage{latexsym,amssymb,amsmath,enumitem}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\geometry{margin=1cm}
+
+% Custom formatting
+\titleformat{\section}
+  {\large\bfseries\color{black}}{}{0pt}{}[\vspace{-0.1em}]
+\titlespacing*{\section}{0pt}{0.6em}{0.2em} % increased before-title space
+
+\newcommand{\sectionline}{\vspace{-0.1em}\noindent\rule{\linewidth}{0.6pt}\vspace{-0.7em}}
+
+
+\titleformat{\subsection}{\normalsize\bfseries\color{black}}{}{0em}{}
+\titleformat{\subsubsection}[runin]{\bfseries}{\thesubsubsection}{1em}{}
+\renewcommand{\labelitemi}{--}
+
+\pagestyle{empty}
+
+\begin{document}
+
+%----------------------------------
+% Header
+%----------------------------------
+\begin{center}
+  \textbf{\LARGE Devshree Bharatia} \\[3pt]
+  City, Country \quad $\vert$ \quad \href{mailto:your.email@domain.com}{your.email@domain.com} \quad $\vert$ \quad Contact No \\[3pt]
+  \href{https://github.com}{GitHub Link} \quad $\vert$ \quad \href{https://www.wixsite.com}{Portfolio Link} \quad $\vert$ \quad \href{https://linkedin.com}{LinkedIn Link}
+\end{center}
+
+\vspace{-1em}
+%----------------------------------
+% Education
+%----------------------------------
+\sectionline
+\section*{Education}
+\textbf{Georgia Institute of Technology}, Atlanta, GA \hfill \textit{Aug 2021 -- Dec 2022}\\
+M.S. in Computer Science (Specialization: Machine Learning) \hfill GPA: 3.9/4 \\
+Relevant Coursework: Data Structures, Machine Learning, AI, Computer Vision, Big Data\\
+\textbf{University of Pune (SPPU)} \hfill \textit{Jul 2015 -- May 2019}\\
+B.E. in Computer Engineering (Gold Medalist) \hfill GPA: 9.48/10
+%----------------------------------
+% Skills
+%----------------------------------
+\sectionline
+\section*{Skills}
+\textbf{Languages \& Frameworks} Python, Java, C/C++, JavaScript, SpringBoot, Node.js, TensorFlow, PyTorch \\
+\textbf{Cloud Platforms:} AWS, Microsoft Azure, Google Cloud Platform (GCP), Firebase \\
+\textbf{DevOps \& Tools:} Docker, Kubernetes, Jenkins, Git, CI/CD, IntelliJ, VS Code, JIRA, Postman, Grafana \\
+\textbf{Databases:} MySQL, Elasticsearch, SQLite \\
+%----------------------------------
+% Experience
+%----------------------------------
+\sectionline
+\section*{Professional Experience}
+\textbf{Walmart}, Software Engineer III \hfill \textit{Feb 2023 -- Present}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.01em]
+  \item Engineered scalable backend services in Planner, a Java SpringBoot and REST API-based framework, to batch millions of express and scheduled orders into optimized last-mile delivery trips across 500+ locations.
+  \item Optimized carrier, van, and driver assignment algorithms, reducing average route time by 18\% and improving delivery success rates in high-volume, time-sensitive environments
+\end{itemize}
+\textbf{Shoreline IoT}, Software Engineer I \hfill \textit{Jun 2019 -- May 2021}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.01em]
+  \item Designed Node.js microservices for a smart-gateway IoT device and implemented MQTT-based pub-sub architecture to enable real-time monitoring and scheduling of events via a cloud-based UI.
+  \item Awarded “Notable Achievement Award” for leading end-to-end project delivery, resolving critical issues, conducting unit and functional testing and independently managing client communication.
+\end{itemize}
+\textbf{Schlumberger}, Data Science Intern \hfill \textit{Jun 2018 -- Aug 2018}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.01em]
+  \item Designed interactive dashboards and reports in Microsoft PowerBI to analyze relational databases at Schlumberger, leveraging advanced features like dynamic query parameters. \item Improved internal data visibility and enabled 25\% faster operational insights for stakeholders
+\end{itemize}
+%----------------------------------
+% Projects
+%----------------------------------
+\sectionline
+\section*{Academic Projects}
+\textbf{Visual Reasoning for the Visually Impaired} \hfill \textit{Sep 2021 -- Dec 2021}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.01em]
+  \item “Developed a deep learning model using PyTorch and TensorFlow to assist blind users in querying their environment via image-based question answering.”
+\item Integrated CNNs for object detection and applied BERT for natural language query understanding.
+\item Achieved 82\% accuracy on a custom dataset of 1,000 real-world scenarios.
+\end{itemize}
+\textbf{Smart E-Stick for the Visually Impaired (Best Project Award)} \hfill \textit{Jun 2018 -- May 2019}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.01em]
+  \item Built an award-winning IoT solution combining a microcontroller-driven e-stick and an Android app to assist visually impaired users with real-time navigation and object detection.
+  \item Enabled object detection via CNN and OCR-based text extraction using NLP. The app facilitated live GPS tracking, SOS alerts, and stick location tracking.
+\item Recognized as ‘Best Project’ among 70+ teams in the computer science department.
+\end{itemize}
+%----------------------------------
+% Publications
+%----------------------------------
+\sectionline
+\section*{Publications \small\href{https://scholar.google.com/citations?user=MzlxMPMAAAAJ&hl=en}{(Google Scholar)}}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.01em]
+  \item Bharatia D, \textit{Smart E-Stick for Visually Impaired using Video Intelligence API}, \textbf{IEEE IBSSC 2019}.
+  \item Bharatia D,  \textit{Advanced Image Analysis and Its Applications}, \textbf{IEEE GCAT 2019}.
+  \item Bharatia D,  \textit{Smart E-Stick using Android App and Cloud Vision}, \textbf{GCAT 2019}.
+\end{itemize}
+%----------------------------------
+% Honors
+%----------------------------------
+\sectionline
+\section*{Honors \& Leadership}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.01em]
+  \item University Gold Medalist and Overall Topper and all-rounder of the Computer Department for 4 years.
+  \item Editorial Head, College Magazine: Led a 10-member team and oversaw ideation, content creation and final publication.
+  \item Grad Application Mentor: Helped 1,000+ MS/PhD aspirants refine resumes and SOPs to craft compelling university applications.
+  \item Technical Writer, GeeksforGeeks: Authored tech content for India’s leading CS education platform with 5M+ readers.
+\end{itemize}
+\end{document}
