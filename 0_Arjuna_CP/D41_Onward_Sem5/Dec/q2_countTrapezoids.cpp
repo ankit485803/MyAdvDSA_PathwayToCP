@@ -5,7 +5,7 @@
 /*
 
 
-3rd Dec 2025 (Wednesday - second day of campusImersion and on firstDay only travelling)
+3rd Dec 2025 (Wednesday - second day [CNS 301] of campusImersion and on firstDay only travelling)
 
 
 qno  3623    https://leetcode.com/problems/count-number-of-trapezoids-i/
