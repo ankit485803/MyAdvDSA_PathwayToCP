@@ -6,7 +6,7 @@
 
 
 
-9th Oct  2025  (Tuesday)
+9th Oct  2025  (Tuesday  -  (Happy Birthday - AmruthaDi))  
 
 
 qno 3432   https://leetcode.com/problems/count-partitions-with-even-sum-difference/
