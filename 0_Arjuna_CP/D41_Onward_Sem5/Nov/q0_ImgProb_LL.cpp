@@ -155,6 +155,9 @@ day6
 qno 2536  https://leetcode.com/problems/increment-submatrices-by-one/description/
 
 
+7th Jan 2026 (Wednesday - happyNewYr25 and happyBirthdayChhotiSister)
+qno 160  https://leetcode.com/problems/intersection-of-two-linked-lists/description/
+
 
 
 
