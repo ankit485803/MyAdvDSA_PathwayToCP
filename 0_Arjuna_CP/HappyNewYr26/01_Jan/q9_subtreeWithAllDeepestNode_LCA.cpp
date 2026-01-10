@@ -258,3 +258,18 @@ public:
 
 // tc is O(N) — each node is visited once.
 // sc is O(H) — recursion stack (H = tree height).
+
+
+
+/*
+
+
+
+qno 3663  https://leetcode.com/problems/find-the-least-frequent-digit/
+
+
+
+
+
+
+*/
