@@ -113,6 +113,14 @@ It operates in O(n) time complexity, where n is the length of the array.
 
 
 
+16.  Enumeration: Systematically checking all valid possibilities that satisfy given constraints.
+Sieve of Eratosthenes: algo to find all primeNo upto n efficiently
+
+C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\0_Arjuna_CP\HappyNewYr26\01_Jan\q19_maxIceCream_Sieve of Eratosthene.cpp
+https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+
+
+
 
 
 
