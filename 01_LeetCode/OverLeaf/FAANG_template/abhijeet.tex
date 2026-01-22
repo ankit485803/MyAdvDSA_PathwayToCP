@@ -1,0 +1,212 @@
+
+
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+% for ACHIEVEMNt section bulletSizeControlAnkit
+\usepackage{graphicx}  
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape ABHIJEET KUMAR} \\ \vspace{1pt}
+    \small +91 8294929675 $|$ \href{mailto:abhijeetkumar3245@gmail.com}{\underline{abhijeetkumar3245@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/abhijeet-kumar-7330771b9/}{\underline{linkedin.com/in/abhijeetiitp}} $|$
+    \href{https://github.com/Abhi-Jeeet}{\underline{GitHub}} $ | $
+    \href{https://leetcode.com/u/abhijeetkumar3245/}{\underline{LeetCode}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology Patna (CPI- 9.18)}{Bihta, Bihar}
+      {Bachelor of Science in Computer Science and Data Analytics}{Aug. 2023– Expected Aug 2027}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SDE Intern}{May 2025- July 2025}
+      {Inkhub}{Ranchi}
+      \resumeItemListStart
+        \resumeItem{Leading the development of a high-performance data analytics dashboard handling large-scale datasets from DynamoDB, optimizing for speed and usability.}
+        \resumeItem{Hands-on with AWS (DynamoDB, S3, SNS, SQS) and OpenAPI for backend development}
+        \resumeItem{Optimized data access by integrating \textbf{AWS ElastiCache (Valkey)}, reducing fetch latency and improving read performance by 40\%}
+      \resumeItemListEnd
+      
+% secodExper
+    \resumeSubheading
+      {Full Stack Developer}{January 2025- April 2025}
+      {Mythyaverse (VRplaced)- AI-powered Immersive Interview Platform}{IIT Roorkee}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained the VR-based platform using Next.js, Material UI, TypeScript, and Redux.}
+        \resumeItem{Built responsive, user-friendly interfaces and integrated seamlessly with backend services.}
+        \resumeItem{Optimized frontend code, achieving a 40\% improvement in response time and smoother user experience.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{CareerCatcher} $|$ \emph{Gemini AI, ReactJs, NodeJs, ExpressJs, MongoDB, Clerk, Cloudinary}}{January 2025}
+          \resumeItemListStart
+            \resumeItem{\href{https://github.com/Abhi-Jeeet/CareerCatcher}{GitHub Link}} and \href{https://career-catcher-client1.vercel.app/}{Website}
+            \resumeItem{Built a full-stack job portal with role-based workflows (recruiter/seeker), enabling job posting, application tracking, and resume uploads.}
+            \resumeItem{Structured backend APIs to support scaling job listings and user profiles efficiently}
+            \resumeItem{AI Resume \& Cover Letter Tools: Integrated AI-powered Resume Analyzer and Cover Letter Generator using Gemini AI, providing instant feedback, strengths, fixes, and personalized, role-specific cover letters.}
+          \resumeItemListEnd
+
+% secondProj
+      \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%----------------------------------
+% ACHIEVEMENTS 
+%----------------------------------
+% \usepackage{graphicx}
+
+\section*{ACHIEVEMENTS}
+\begin{itemize}[leftmargin=2.5em, itemsep=0.01em, label={\scalebox{0.7}{$\bullet$}}, nosep]
+\small
+  \item Solved \textbf{350+ LeetCode problems} (\textbf{top 91.47\% worldwide}); demonstrating advanced problem-solving and coding skills.
+  \item As Overall Coordinator of IIT Patna Coding Club (AI-ML-DL) led 4 hackathons, 2 workshops, \textbf{250+ participants}; raised club \textbf{engagement 40\%}.
+\end{itemize}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
