@@ -2,3 +2,225 @@
 
 % 22nd Jan 2026 (Thursday - Sem6 IITP stated)
 
+
+
+
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+% for ACHIEVEMNt section bulletSizeControlAnkit
+\usepackage{graphicx}  
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.65in}  %left margin on odd-numbered pages
+\addtolength{\evensidemargin}{-0.65in} %RIGHT for evenPageNo
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}   %ankit reduceTopMargin from -0.5 to -0.65inch
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape ANKIT KUMAR} \\ \vspace{1pt}
+    
+    \small +91 7970577531 $|$ \href{mailto:ankit485803@gmail.com}{{ankit485803@gmail.com}} $|$ 
+    \href{https://leetcode.com/u/ankit485803/}{\underline{LeetCode}} $|$
+    \href{https://github.com/ankit485803}{github.com/ankit485803} $|$
+    \href{https://sites.google.com/view/ankit127iitp}{\underline{Portfolio Site}} $|$
+    \href{https://www.linkedin.com/in/ankit127iitp}{\underline{LinkedIn}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Indian Institute of Technology (IIT) Patna}{\textit{Jul’23 – Jul’27 (Expected)}}
+    {\textit{Bachelor of Science, Computer Science and Data Analytics}, \textbf{SPI: 9.29/10}}
+    {Bihar, India}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ISRO – IIRS: Dept of Space, Gov of India}{Feb 10 - June 30, 2025}
+      {\textit{Research Project (Asst.)}}{Dehradun}
+      \resumeItemListStart
+        \resumeItem{Worked on the research paper titled \textit{“Microclimate and Thermal Comfort Modelling at the Neighbourhood Scale: A Case Study of Dehradun”}.}
+        \resumeItem{Integrated \textbf{thermal-remote-sensing--based urban-microclimate analysis} using simulated and ground-truth data collected via \textbf{field visit}-deployed \textbf{Automated Weather Stations (AWS device)}; secondary objective focused on ML \& deep \textbf{neural network} –based thermal comfort prediction.}
+        \resumeItem{\textbf{Frameworks/Skills:} ENVI-met, RayMan, QGIS, SketchUp, Microclimate Modeling.}
+      \resumeItemListEnd
+
+% secodExper
+    \resumeSubheading
+      {NESAC - ISRO Meghalaya Centre}{Dec 2 - Jan 27, 2025}
+      {\textit{Project Trainee Intern (VQA transformer)}}{Shillong}
+      \resumeItemListStart
+        \resumeItem{Build a \textbf{lightweight transformer-based Visual Question Answering (VQA)} system for RS applications.}
+        \resumeItem{Utilized \textbf{LISS-IV Indian satellite imagery data} (.tif) focused on the North-East region of India; trained models on \textbf{210 multi-band images} (Red, Blue, NIR).}
+        \resumeItem{Implemented deep learning models using \textbf{BERT} for \textbf{question encoding} and \textbf{ResNet-50} for visual feature extraction with \textbf{PyTorch}.}
+        \resumeItem{\textbf{Frameworks/Skills:} PyTorch, BERT, ResNet-50, Transformer Models, LISS-IV, Satellite data analysis.}
+    \resumeItemListEnd
+
+% thirdExper
+    \resumeSubheading
+      {Indian Institute of Information Technology, Guwahati}{May 18 - July 18, 2024}
+      {\textit{ML Intern (Application domain: Finance)}}{Assam}
+      \resumeItemListStart
+        \resumeItem{Developed short-term \textbf{stock market forecasting models} using ML algo on \textbf{22 years of TCS stock data} from Yahoo Finance, achieving \textbf{86.2\% accuracy}.}
+        \resumeItem{Experimented with the various deep learning architectures including \textbf{RNN, LSTM}, along with multi-variants and fine-tuned models using \textbf{RandomSearchCV} for \textbf{hyperparameter optimization}.}
+        \resumeItem{\textbf{Frameworks/Skills:} Scikit-learn, Tensorflow, LSTM (Bidirectional and Stacked variants), Time-Series Analysis.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{PraveshCampusPlacement} $|$ \emph{JWT, bcrypt, React, ExpressJs, MySQL} $|$ \href{https://github.com/ankit485803/PraveshCampusPlacement_IITP}{GitHub Repo}}{Aug'25}
+          \resumeItemListStart
+            \resumeItem{Created a \textbf{user-centric} relational system linking Students, Recruiters, and Placement Officers, with focused contributions to \textbf{Admin workflows} for streamlined placement operations.}
+            \resumeItem{Integrated \textbf{JWT-based authentication} with \textbf{bcrypt hashing} and \textbf{role-based access control} for secure access.}
+          \resumeItemListEnd
+          
+          \vspace{-4.5mm}  % Adjust this value as needed (-2mm to -6mm typical)
+% secondProj
+      \resumeProjectHeading
+          {\textbf{ChatCoder’s Haven: A Feature-Rich, Multilingual Compiler with Integrated Chatbot} \emph{}}{Oct'24}
+          \resumeItemListStart
+            \resumeItem{Tech Stack: HTML, CSS, JavaScript, Node.js, Bootstrap} $|$ \emph{\href{https://github.com/ankit485803/ChatCoder-s-Haven_IITP}{\underline{Source Code}} $|$ \href{https://youtu.be/uFer2uBu6SI?si=g6kGLdnluauYpuva}{Project Video}}
+            \resumeItem{Designed a web-based online coding platform supporting \textbf{Python, C++, and Java} with a dark-themed, user-friendly interface, and configured an \textbf{AI-powered chatbot} to assist users with coding queries; debugging guidance.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%----------------------------------
+% ACHIEVEMENTS 
+%----------------------------------
+% \usepackage{graphicx}
+
+\section*{ACHIEVEMENTS}
+\begin{itemize}[leftmargin=2.5em, itemsep=0.01em, label={\scalebox{0.7}{$\bullet$}}, nosep]
+\small
+  \item Solved \textbf{350+ LeetCode problems} (\textbf{top 91.47\% worldwide}); demonstrating advanced problem-solving and coding skills.
+  \item As Overall Coordinator of IIT Patna Coding Club (AI-ML-DL) led 4 hackathons, 2 workshops, \textbf{250+ participants}; raised club \textbf{engagement 40\%}.
+\end{itemize}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
