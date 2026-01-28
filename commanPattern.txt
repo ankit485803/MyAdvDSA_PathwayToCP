@@ -1,4 +1,13 @@
 
+
+nums.erase(nums.begin() + index);  //delete elem at i index  tc=O(n), sc=O(1)
+int mx = *max_element(nums.begin(), nums.end());   //maxElem find  tc=O(n), sc=O(1)
+sort(nums.begin(), nums.end());   //sortArr using c++ STL  tc=O(nLogN), sc=O(logN) due to recurssive Quick + Heap + Insertion sort
+
+
+
+
+
 Repo Link:   https://github.com/ankit485803/MyAdvDSA_PathwayToCP
 
 recursion funct -- TC formula =  total calls * work done in each call 
