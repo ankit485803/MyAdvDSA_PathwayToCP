@@ -12,8 +12,8 @@
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
-
 \documentclass[letterpaper,11pt]{article}
+\usepackage{lmodern}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -29,6 +29,15 @@
 \input{glyphtounicode}
 % for ACHIEVEMNt section bulletSizeControlAnkit
 \usepackage{graphicx}  
+\usepackage{array}      % for tabular
+\usepackage{multicol}   % for Solution 2
+\usepackage{enumitem}   % for Solution 2 (nosep, itemsep control)
+
+
+
+
+
+
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -48,12 +57,14 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.65in}  %left margin on odd-numbered pages
-\addtolength{\evensidemargin}{-0.65in} %RIGHT for evenPageNo
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.65in}   %ankit reduceTopMargin from -0.5 to -0.65inch
-\addtolength{\textheight}{1.0in}
+%% Adjust margins %%
+\addtolength{\oddsidemargin}{-0.75in}   % LEFT stays same
+\addtolength{\evensidemargin}{-0.95in}  % RIGHT reduced extra 0.2in
+\addtolength{\textwidth}{1.4in}         % Total width increased
+\addtolength{\topmargin}{-.75in}        
+\addtolength{\textheight}{1.2in}        
+
+
 
 \urlstyle{same}
 
@@ -61,52 +72,57 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+%% Sections formatting  %%
+% Tighter section formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-9pt}\scshape\raggedright\large   % was -4pt
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]  % was -5pt
+
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
-% Custom commands
+%% Custom commands %%
+% Reduce Vertical Gaps in Custom Commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-2.5pt}}              % was -2pt
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{1pt}\item               % was -2pt yah Exp1 and exp2 ke betweenSpace deta hai
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-7pt}     % was -7pt
 }
 
-\newcommand{\resumeSubSubheading}[2]{
+\newcommand{\resumeSubSubheading}[2]{   %yah subSebHeading ka hai jo used abhi tak ankit nahi kiye h
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-9pt}     % was -7pt
 }
 
-\newcommand{\resumeProjectHeading}[2]{
+\newcommand{\resumeProjectHeading}[2]{  %yah proj1 and proj2 ke betweenSpace deta hai
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-9pt}     % was -7pt
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-5pt}}  % was -4pt
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-1pt]}  % added itemsep
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-9pt}}  % added -3pt
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=-1pt]}   % added itemsep
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}        % was -5pt
+
+
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -116,7 +132,7 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape ANKIT KUMAR} \\ \vspace{1pt}
+    \textbf{\Huge \scshape ANKIT KUMAR} \\ \vspace{0pt}
     
     \small +91 7970577531 $|$ \href{mailto:ankit485803@gmail.com}{{ankit485803@gmail.com}} $|$ 
     \href{https://leetcode.com/u/ankit485803/}{\underline{LeetCode}} $|$
@@ -142,12 +158,13 @@
 
     \resumeSubheading
       {ISRO – IIRS: Dept of Space, Gov of India}{Feb 10 - June 30, 2025}
-      {\textit{Research Project (Asst.)}}{Dehradun}
+      {Research Project (Asst.)}{Dehradun}
       \resumeItemListStart
         \resumeItem{Worked on the research paper titled \textit{“Microclimate and Thermal Comfort Modelling at the Neighbourhood Scale: A Case Study of Dehradun”}.}
         \resumeItem{Integrated \textbf{thermal-remote-sensing--based urban-microclimate analysis} using simulated and ground-truth data collected via \textbf{field visit}-deployed \textbf{Automated Weather Stations (AWS device)}; secondary objective focused on ML \& deep \textbf{neural network} –based thermal comfort prediction.}
         \resumeItem{\textbf{Frameworks/Skills:} ENVI-met, RayMan, QGIS, SketchUp, Microclimate Modeling.}
       \resumeItemListEnd
+      \vspace{1.5mm}  % giveSomeSpace between Exp1 and exp2
 
 % secodExper
     \resumeSubheading
@@ -159,6 +176,7 @@
         \resumeItem{Implemented deep learning models using \textbf{BERT} for \textbf{question encoding} and \textbf{ResNet-50} for visual feature extraction with \textbf{PyTorch}.}
         \resumeItem{\textbf{Frameworks/Skills:} PyTorch, BERT, ResNet-50, Transformer Models, LISS-IV, Satellite data analysis.}
     \resumeItemListEnd
+    \vspace{1.5mm}  % giveSomeSpace between Exp2 and exp3
 
 % thirdExper
     \resumeSubheading
@@ -185,7 +203,7 @@
             \resumeItem{Integrated \textbf{JWT-based authentication} with \textbf{bcrypt hashing} and \textbf{role-based access control} for secure access.}
           \resumeItemListEnd
           
-          \vspace{-4.5mm}  % Adjust this value as needed (-2mm to -6mm typical)
+          \vspace{2.5mm}  % Adjust this value as needed (-2mm to -6mm typical)
 % secondProj
       \resumeProjectHeading
           {\textbf{ChatCoder’s Haven: A Feature-Rich, Multilingual Compiler with Integrated Chatbot} \emph{}}{Oct'24}
@@ -197,16 +215,29 @@
 
 
 
+
+% Relevant Coursework
+\section*{Relevant Coursework}
+\begin{tabbing}
+\hspace{0.15in} \= \scalebox{0.6}{$\bullet$}~Data Structures \hspace{1.2cm} \= \scalebox{0.6}{$\bullet$}~Algorithms \hspace{1.2cm} \= \scalebox{0.6}{$\bullet$}~Artificial Intelligence \hspace{1.2cm} \= \scalebox{0.6}{$\bullet$}~Computer Architecture \hspace{1.2cm} \= \kill
+\> \scalebox{0.6}{$\bullet$}~Data Structures \> \scalebox{0.6}{$\bullet$}~Algorithms \> \scalebox{0.6}{$\bullet$}~Artificial Intelligence \> \scalebox{0.6}{$\bullet$}~Computer Architecture \\
+\> \scalebox{0.6}{$\bullet$}~Computer Networks \> \scalebox{0.6}{$\bullet$}~DBMS \> \scalebox{0.6}{$\bullet$}~Digital Electronics \> \scalebox{0.6}{$\bullet$}~Operating Systems (Linux)
+\end{tabbing}
+% \vspace{-7pt}
+
+
+
+
 %----------------------------------
 % ACHIEVEMENTS 
 %----------------------------------
 % \usepackage{graphicx}
 
-\section*{ACHIEVEMENTS}
-\begin{itemize}[leftmargin=2.5em, itemsep=0.01em, label={\scalebox{0.7}{$\bullet$}}, nosep]
+\section*{Achievements}
+\begin{itemize}[leftmargin=2em, itemsep=0pt, label={\scalebox{0.6}{$\bullet$}}, nosep, topsep=0pt]
 \small
-  \item Solved \textbf{350+ LeetCode problems} (\textbf{top 91.47\% worldwide}); demonstrating advanced problem-solving and coding skills.
-  \item As Overall Coordinator of IIT Patna Coding Club (AI-ML-DL) led 4 hackathons, 2 workshops, \textbf{250+ participants}; raised club \textbf{engagement 40\%}.
+  \item Solved \textbf{425+ LeetCode problems} (\textbf{top 91.47\% worldwide}); demonstrating advanced problem-solving and coding skills.
+  \item As \textbf{Overall Coordinator} of IIT Patna Coding Club (AI-ML-DL) led 4 hackathons, 2 workshops, \textbf{250+ participants}; raised club \textbf{engagement 40\%}.
 \end{itemize}
 
 
@@ -214,13 +245,32 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     \textbf{Languages/Frameworks:} {JavaScript, C++, Python, \textbf{Scikit-learn, TensorFlow, PyTorch}, Numpy, Pandas, Matplotlib} \\
+     \textbf{Technologies:} {Web Development (MERN: HTML, CSS, Bootstrap, Node.js, Express.js), Data Science} \\
+     \textbf{Version Control/Developer Tools:} {Git, GitHub, VS Code, Docker, Google Colab, Jupyter Notebook} \\
+     \textbf{Databases:} {MySQL, MongoDB}
     }}
  \end{itemize}
 
+
+% --------- Publications
+\section{Publications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{gen-cv-manager: A Python Package for CV and Resume Management} \emph{ }}{\textit{(published on: Sep 1, 2024)}}
+          \resumeItemListStart
+            \resumeItem{Developed a Python package to streamline CV and resume creation for students and professionals. Features include customizable templates and a user-friendly interface for managing and presenting credentials.}
+            \resumeItem{Available on PyPI: \href{https://pypi.org/project/gen-cv-manager/}{\textit{https://pypi.org/project/gen-cv-manager}}}
+          \resumeItemListEnd
+          
+          \vspace{-0.25pt}  % Adjust this value as needed (-2mm to -6mm typical)
+% % secondProj
+%       \resumeProjectHeading
+%           {\textbf{Financial Time Series Forecasting \& Technical Analysis Using cLSTM and Hybrid Deep Learning Models} \emph{}}{\textit{(Ongoing)}}
+%           \resumeItemListStart
+%             \resumeItem{This research paper explores innovative applications of Corrector-LSTM (cLSTM) and hybrid deep-learning techniques to improve the accuracy of financial time-series forecasting and technical analysis.}
+%           \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
