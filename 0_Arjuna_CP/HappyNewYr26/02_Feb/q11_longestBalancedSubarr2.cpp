@@ -4,14 +4,16 @@
 /*
 
 
-10th Feb 2026 (Tuesday)
+11th Feb 2026 (Wednesday)
 
 
-qno 3719  https://leetcode.com/problems/longest-balanced-subarray-i/?envType=daily-question&envId=2026-02-10
+
+qno 3721 https://leetcode.com/problems/longest-balanced-subarray-ii/?envType=daily-question&envId=2026-02-11
 
 
-3719. Longest Balanced Subarray I
-Medium
+
+3721. Longest Balanced Subarray II
+Hard
 Topics
 
 Companies
@@ -58,53 +60,22 @@ It has 1 distinct even number [2] and 1 distinct odd number [3]. Thus, the answe
 
 Constraints:
 
-1 <= nums.length <= 1500
+1 <= nums.length <= 105
 1 <= nums[i] <= 105
  
-Discover more
-coding languages
+
 Seen this question in a real interview before?
 1/5
 Yes
 No
 Accepted
-81,511/131K
+6,827/35.2K
 Acceptance Rate
-62.2%
+19.4%
 Topics
-Senior
+Principal
 Array
 Hash Table
-Divide and Conquer
-Segment Tree
-Prefix Sum
-Weekly Contest 472
 
 
 */
-
-
-
-class Solution {
-public:
-    int longestBalanced(vector<int>& nums) {  //tc=O(n^2), sc=O(n) due to SET
-        int n = nums.size();
-        int ans = 0;
-
-        for (int i = 0; i < n; i++) {
-            unordered_set<int> evenSet, oddSet;
-
-            for (int j = i; j < n; j++) {
-                if (nums[j] % 2 == 0)
-                    evenSet.insert(nums[j]);
-                else
-                    oddSet.insert(nums[j]);
-
-                if (evenSet.size() == oddSet.size()) {
-                    ans = max(ans, j - i + 1);
-                }
-            }
-        }
-        return ans;
-    }
-};
