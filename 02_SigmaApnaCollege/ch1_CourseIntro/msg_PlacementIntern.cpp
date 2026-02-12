@@ -21,4 +21,19 @@ Pre-requisites
 
 
 
+
+
+
+INDEX of ch:
+ch1: chapater1 - courseIntro
+ch2: chapter2 - installationResource
+ch3_flowchartPseudocode
+ch4_variableDatatype
+
+
+
+
+
+
+
 */
