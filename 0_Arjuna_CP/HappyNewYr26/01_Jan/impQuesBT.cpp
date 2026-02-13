@@ -1,4 +1,14 @@
 
+return (secondMin == LONG_MAX) ? -1 : secondMin;
+// written in normal if-else format instead of the ternary operator.
+if (secondMin == LONG_MAX) {
+    return -1;
+} else {
+    return secondMin;
+}
+
+
+
 
 /*
 
@@ -23,6 +33,15 @@ qno 110  https://leetcode.com/problems/balanced-binary-tree/description/
 qno 938  https://leetcode.com/problems/range-sum-of-bst/
 qno 98  https://leetcode.com/problems/validate-binary-search-tree/
 qno 226  https://leetcode.com/problems/invert-binary-tree/
+
+12th Feb 2026 (Thursday)
+qno 404   https://leetcode.com/problems/sum-of-left-leaves/
+qno 965  https://leetcode.com/problems/univalued-binary-tree/
+
+13th Feb 2026 (Friday)
+qno 563 https://leetcode.com/problems/binary-tree-tilt/
+qno 671  https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/
+
 
 
 
