@@ -44,5 +44,13 @@ qno 671  https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/
 
 
 
+14th Feb 2026 (Satursday)
+qno 230 https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+qno 106  https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+qno 114  https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/
+
+
+
+
 
 */
