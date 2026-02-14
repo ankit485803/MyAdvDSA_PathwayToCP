@@ -8,7 +8,8 @@ Remove-Item .\demo.exe, .\myRun.exe, .\myRunFile.exe, .\myRunFile2.exe
 
 /*
 
-Message from Shardha Didi
+Message from Shardha Didi:
+    dailyAttendLec and solve the Assig of eachChapter
 
 
 
@@ -37,3 +38,13 @@ ch4_variableDatatype
 
 
 */
+
+
+
+
+PS C:\Users\sanja\Desktop\Lab> code .
+PS C:\Users\sanja\Desktop\Lab> g++ .\sigmaApnaCollege.cpp -o myRunFile
+PS C:\Users\sanja\Desktop\Lab> .\myRunFile.exe
+Hello world
+PS C:\Users\sanja\Desktop\Lab> explorer.exe .
+PS C:\Users\sanja\Desktop\Lab>

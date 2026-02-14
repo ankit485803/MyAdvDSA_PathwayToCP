@@ -3,3 +3,10 @@
 11th Feb 2026 (Wednesday)
 
 Day1
+
+
+
+Index of chapters:
+
+ch1_CourseIntro
+ch2_InstallationResouces
