@@ -50,6 +50,9 @@ qno 106  https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
 qno 114  https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/
 
 
+15th Feb 2026 (Sunday - mahaShivRatri)
+qno 199  https://leetcode.com/problems/binary-tree-right-side-view/
+
 
 
 
