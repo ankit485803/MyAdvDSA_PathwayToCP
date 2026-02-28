@@ -23,5 +23,7 @@ int main() {
     cout << "See pattern:\n";
     pattern2Print();   // Call function normally
 
+    //cout << "****\n****\n**\n*";
+
     return 0;
 }
