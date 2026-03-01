@@ -12,3 +12,4 @@ ch1_CourseIntro
 ch2_InstallationResouces
 ch3_FlowchartPseudocode
 ch4_VariableDatatype
+ch5_Operators
