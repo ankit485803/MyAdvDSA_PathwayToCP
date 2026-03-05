@@ -1,4 +1,5 @@
 
+g++ sigmaApnaCollege.cpp -o codeRunFile.exe && ./codeRunFile.exe
 
 /*
 
