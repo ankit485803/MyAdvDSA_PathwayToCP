@@ -1,4 +1,14 @@
 
+sanja@IITP:~$ cd /mnt/c/Users/sanja/Desktop/Lab/
+
+sanja@IITP:/mnt/c/Users/sanja/Desktop/Lab$ notepad sigmaApnaCollege.cpp
+^Csanja@IITP:/mnt/c/Users/sanja/Desktop/Lab$ g++ sigmaApnaCollege.cpp -o codeRunFile.exe
+sanja@IITP:/mnt/c/Users/sanja/Desktop/Lab$ ./codeRunFile.exe
+5,4
+sanja@IITP:/mnt/c/Users/sanja/Desktop/Lab$ g++ sigmaApnaCollege.cpp -o codeRunFile.exe && ./codeRunFile.exe
+5,4
+
+
 
 11th Feb 2026 (Wednesday)
 
@@ -13,3 +23,4 @@ ch2_InstallationResouces
 ch3_FlowchartPseudocode
 ch4_VariableDatatype
 ch5_Operators
+ch6_conditionalStatement
