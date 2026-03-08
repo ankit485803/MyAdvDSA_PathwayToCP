@@ -139,6 +139,17 @@ https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\0_Arjuna_CP\HappyNewYr26\01_Jan\q30_minCost.cpp
 
 
+18. clever trick called “diagonalization”, inspired by Cantor’s diagonal argument. 
+Why the Diagonalization Trick Works
+The idea comes from Cantor’s diagonal argument, which is a famous method in mathematics to construct an element not in a list.
+
+C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\0_Arjuna_CP\HappyNewYr26\03_March\q8_findDiffBinaryStr.cpp
+qno 1980   https://leetcode.com/problems/find-unique-binary-string/?envType=daily-question&envId=2026-03-08
+
+
+
+
+19.
 
 
 
