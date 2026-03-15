@@ -149,7 +149,17 @@ qno 1980   https://leetcode.com/problems/find-unique-binary-string/?envType=dail
 
 
 
-19.
+19. Fermant Little Theorem, Power ko find out ke liye BinaryExponentation karte hai, and modulo property
+
+a/b % N jisko hm a*b^-1 %M = a*b power M-2 % M
+
+C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\0_Arjuna_CP\HappyNewYr26\03_March\Fermant Little Theorem and Property of Modulo_DocScanner 15 Mar 2026 09-12.jpg.jpeg
+qno 1622  https://leetcode.com/problems/fancy-sequence/description/?envType=daily-question&envId=2026-03-15
+0_Arjuna_CP\HappyNewYr26\03_March\q15_fancySeq.cpp
+
+
+
+20. 
 
 
 
