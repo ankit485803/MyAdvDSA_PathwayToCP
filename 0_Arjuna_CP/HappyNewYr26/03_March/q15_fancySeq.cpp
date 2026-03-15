@@ -1,4 +1,13 @@
 
+git tag -a v2.3-fermantLittleTheorem-powerFindUsingBinaryExponentiation-ModuloProp `
+-m "Fermat Little Theorem + Binary Exponentiation + Modulo property" `
+-m "img: 0_Arjuna_CP\HappyNewYr26\03_March\Fermant Little Theorem and Property of Modulo_DocScanner 15 Mar 2026 09-12.jpg.jpeg" `
+-m "qno: 1622 https://leetcode.com/problems/fancy-sequence/" `
+-m "codeFile: 0_Arjuna_CP\HappyNewYr26\03_March\q15_fancySeq.cpp"
+
+
+git push origin v2.3-fermantLittleTheorem-powerFindUsingBinaryExponentiation-ModuloProp
+
 
 
 /*
@@ -119,7 +128,7 @@ public:
 
 
 
- 
+
 
 //Approach - Simple maths + Binary Exponentiation and Fermat's Little Theorem
 //T.C : O(log(M)) for Binary Exponentiation power(mult, M-2)
