@@ -2,6 +2,19 @@
 
 //print the sum of digits of a numb using while loop, n = 10829
 
+
+
+
+
+/*
+
+shardha di boli: kisi bhi numb % 10 lene se lastDigit milega, aur numb / 10 karne se lastDigit remove karna hai
+
+
+
+
+*/
+
 #include <iostream>
 using namespace std;
 #include <vector>
