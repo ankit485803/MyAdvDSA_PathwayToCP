@@ -6,7 +6,7 @@
 Matrix Similarity After Cyclic Shifts
 
 
-27th March 2026 (Friday)
+27th March 2026 (Friday - HappyRamnavi)
 
 
 qno 2946  https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/?envType=daily-question&envId=2026-03-27
