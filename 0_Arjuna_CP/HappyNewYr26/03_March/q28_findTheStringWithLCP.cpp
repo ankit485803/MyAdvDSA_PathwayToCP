@@ -5,6 +5,7 @@
 
 28th March 2026 (Satursday)
 
+learn: how to make LCP 2D grid using String
 
 
 qno 2573  https://leetcode.com/problems/find-the-string-with-lcp/?envType=daily-question&envId=2026-03-28
