@@ -3,6 +3,7 @@
 /*
 
 2nd April 2026 (Thursday - midSemCapstoneProj reportSubmission)
+due to midSemReportSubmission of capstoneProj not able to continute for 5 days
 
 print the InvertedStar pattern using generalize formual
 
