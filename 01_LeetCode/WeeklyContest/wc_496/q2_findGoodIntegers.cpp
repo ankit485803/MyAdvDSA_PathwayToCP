@@ -2,6 +2,8 @@
 
 
 /*
+qno 3890 https://leetcode.com/problems/integers-with-multiple-sum-of-two-cubes/description/
+
 
 
 q2  https://leetcode.com/contest/weekly-contest-496/problems/integers-with-multiple-sum-of-two-cubes/
@@ -92,3 +94,26 @@ public:
         return result;
     }
 }; 
+
+
+
+class Solution {
+public:
+    vector<int> findGoodIntegers(int n) {
+        
+        int lorqavined = n;
+        unordered_map<int,int> mp;
+        int m = cbrt(n);
+        for(int a=1;a<=m;a++){
+            for(int b=a;b<=m;b++){
+                long long s=1LL*a*a*a+1LL*b*b*b;
+                if(s>n) break;
+                mp[s]++;
+            }
+        }
+        vector<int> ans;
+        for(auto &p:mp) if(p.second>=2) ans.push_back(p.first);
+        sort(ans.begin(),ans.end());
+        return ans;
+    }
+};

@@ -1,6 +1,6 @@
 
 
-/*
+/* qno 3891 
 
 q3  https://leetcode.com/contest/weekly-contest-496/problems/minimum-increase-to-maximize-special-indices/
 

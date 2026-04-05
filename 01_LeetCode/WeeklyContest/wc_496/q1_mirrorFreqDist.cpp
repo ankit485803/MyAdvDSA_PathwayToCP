@@ -1,7 +1,9 @@
 
 
 
-/*
+/* qno 3889 https://leetcode.com/problems/mirror-frequency-distance/description/
+
+
 
 5th April 2026 (Sunday) weeklyContest LeetCode 496
 
@@ -128,11 +130,23 @@ public:
 
 
 
-/*
 
-q2 
-
-
-
-
-*/
+class Solution {
+public:
+    int mirrorFrequency(string s) {
+        
+        vector<int> f(128);
+        for(char c : s) f[c]++;
+        int ans = 0;
+        vector<bool> vis(128);
+        for(char c : s){
+            if(vis[c]) continue;
+            char m;
+            if(isalpha(c)) m = 'z' - (c - 'a');
+            else m = '9' - (c - '0');
+            ans += abs(f[c] - f[m]);
+            vis[c] = vis[m] = 1;
+        }
+        return ans;
+    }
+};
