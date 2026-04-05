@@ -5,7 +5,7 @@
 
 
 
-5th April 2026 (Sunday) weeklyContest LeetCode 496
+5th April 2026 (Sunday- sem6 3rd Year IITP) weeklyContest LeetCode 496
 
 https://leetcode.com/contest/weekly-contest-496/
 
