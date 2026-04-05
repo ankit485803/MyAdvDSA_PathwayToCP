@@ -1,6 +1,9 @@
 
 
-/*
+/* qno 3892  https://leetcode.com/problems/minimum-operations-to-achieve-at-least-k-peaks/
+
+
+
 
 q4 https://leetcode.com/contest/weekly-contest-496/problems/minimum-operations-to-achieve-at-least-k-peaks/description/
 
