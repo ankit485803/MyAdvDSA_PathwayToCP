@@ -3,6 +3,8 @@
 
 /* qno 3889 https://leetcode.com/problems/mirror-frequency-distance/description/
 
+https://leetcode.com/discuss/post/951105/new-contest-rule-updated-in-sep-2024-by-zowhy/
+
 
 
 5th April 2026 (Sunday- sem6 3rd Year IITP) weeklyContest LeetCode 496
