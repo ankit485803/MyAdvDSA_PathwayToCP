@@ -19,7 +19,7 @@ Day1
 Index of chapters:
 
 ch1_CourseIntro
-ch2_InstallationResouces
+ch2_InstallationResources
 ch3_FlowchartPseudocode
 ch4_VariableDatatype
 ch5_Operators
