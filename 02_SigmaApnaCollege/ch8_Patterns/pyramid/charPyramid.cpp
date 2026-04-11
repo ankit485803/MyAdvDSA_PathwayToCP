@@ -51,6 +51,7 @@ void charPyramid(int n) {
         for(int j=1; j <= i; j++) {
             cout << ch << " ";
             ch++;
+            // cout << ch++;  //postIncrement hai es liye hm esko bhi kar sakte hai
         }
         cout << endl;
     }
