@@ -14,7 +14,7 @@ https://www.youtube.com/@explorewithgyani578
 
 
 C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\11_coderestroGyani
-here c means concepts
+here c stands for concepts
 directoryNameList:
 
 c1_firstLastOccurrence
@@ -29,3 +29,6 @@ git log -- gyaniCoderestro/
 git commit -m "feat(gyaniCoderestro): c1_firstLastOccurrence using BS"
 // ankit yah commit like above 
 git shortlog -s -n -- gyaniCoderestro/
+
+git log --grep="gyaniCoderestro"
+git log --grep="gyaniCoderestro" -- gyaniCoderestro/

@@ -10,6 +10,12 @@ find the fist and last occurrence index of target
 
 method1: bruteForce - traverse eachElem  tc=O(n), sc=O(1)
 
+Use consistent verbs in git commit -m "feat(gyaniCoderestro): c1_firstLastOccurrence using BS"
+Try to standardize:
+    add
+    refactor
+    optimize
+    fix
 */
 
 #include <iostream>

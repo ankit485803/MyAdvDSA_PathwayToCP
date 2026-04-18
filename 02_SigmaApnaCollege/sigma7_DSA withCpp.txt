@@ -13,8 +13,8 @@ sanja@IITP:/mnt/c/Users/sanja/Desktop/Lab$ g++ sigmaApnaCollege.cpp -o codeRunFi
 11th Feb 2026 (Wednesday)
 
 Day1
-
-
+feat(scope): action + topic
+git commit -m "feat(sigmaApnaCollege): solve hollow rectangle star pattern problem (ch8)"
 
 Index of chapters:
 
