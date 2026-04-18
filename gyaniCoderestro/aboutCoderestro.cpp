@@ -23,3 +23,9 @@ c2_
 
 
 */
+
+
+git log -- gyaniCoderestro/
+git commit -m "feat(gyaniCoderestro): c1_firstLastOccurrence using BS"
+// ankit yah commit like above 
+git shortlog -s -n -- gyaniCoderestro/
