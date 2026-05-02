@@ -26,4 +26,4 @@ ch5_Operators
 ch6_conditionalStatement
 ch7_Loops
 ch8_Patterns   (start: 25th March Thur, end: 27th April 2026 Mon)
-ch9_Functions  (start:   , end:  )
+ch9_Functions  (start: 4th May Mon   , end:  )
