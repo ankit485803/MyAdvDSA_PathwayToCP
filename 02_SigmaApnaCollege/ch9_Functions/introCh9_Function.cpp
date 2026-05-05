@@ -17,6 +17,7 @@ definition: Block of code which runs when it is called
 void primitive data type in c++
 oid is a primitive (built-in) data type that represents a valueless entity or the absence of a value. Because it denotes nothingness, you cannot declare a variable of type void
 
+https://image.pi7.org/join-images-online  and https://pinetools.com/merge-images
 
 */
 
