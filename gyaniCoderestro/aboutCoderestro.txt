@@ -1,6 +1,6 @@
 
 
-/*
+
 
 18th April 2026 (Saturday)
 
@@ -13,17 +13,6 @@ in.linkedin.com/in/gyani-kumari-102002
 https://www.youtube.com/@explorewithgyani578
 
 
-C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\11_coderestroGyani
-here c stands for concepts
-directoryNameList:
-
-c1_firstLastOccurrence
-c2_
-
-
-
-*/
-
 
 git log -- gyaniCoderestro/
 git commit -m "feat(gyaniCoderestro): c1_firstLastOccurrence using BS"
@@ -32,3 +21,16 @@ git shortlog -s -n -- gyaniCoderestro/
 
 git log --grep="gyaniCoderestro"
 git log --grep="gyaniCoderestro" -- gyaniCoderestro/
+
+
+
+
+C:\Users\sanja\Desktop\GitProj\MyAdvDSA_PathwayToCP\11_coderestroGyani
+here c stands for concepts
+directoryNameList:
+
+c1_firstLastOccurrence  (brute, BS, lowerbound)
+c2_revNumInt 
+c3_checkArrSortedRotated   (sortedArr prop, XOR bitwiseOp to find uniqueElem)
+c4_longestSubarrZeroOnes   (BS shortcut lowerUpperBound)
+c5_
