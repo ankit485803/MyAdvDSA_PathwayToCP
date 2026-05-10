@@ -9,8 +9,10 @@ sanja@IITP:/mnt/c/Users/sanja/Desktop/Lab$ g++ sigmaApnaCollege.cpp -o codeRunFi
 5,4
 
 
+WAP = write a program  , WAF = write a function
 
-11th Feb 2026 (Wednesday)
+
+11th Feb 2026 (Wednesday - sem6 3rd yr IITP)
 
 Day1
 feat(scope): action + topic
