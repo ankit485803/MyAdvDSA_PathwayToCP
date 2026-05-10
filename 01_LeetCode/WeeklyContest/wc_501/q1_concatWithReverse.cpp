@@ -5,6 +5,8 @@
 10th May 2026 (Sunday) 8 to 9:30 AM IST
 https://leetcode.com/contest/weekly-contest-501/
 
+probNO 3925  https://leetcode.com/problems/concatenate-array-with-reverse/description/
+
 
 https://leetcode.com/contest/weekly-contest-501/problems/concatenate-array-with-reverse/
 
@@ -78,4 +80,26 @@ public:
         return ans;
         
     }    
+};
+
+
+
+class Solution {
+public:
+    vector<int> concatWithReverse(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> ans(2 * n);
+
+        // Copy original array
+        for (int i = 0; i < n; i++) {
+            ans[i] = nums[i];
+        }
+
+        // Append reversed array
+        for (int i = 0; i < n; i++) {
+            ans[i + n] = nums[n - i - 1];
+        }
+
+        return ans;
+    }
 };
