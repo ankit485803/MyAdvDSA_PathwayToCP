@@ -4,7 +4,12 @@
 
 WAF to print the factorial of a number n
 
-
+0 ! = 1
+1 ! = 1
+2 ! = 1 * 2 = 2
+3! = 1*2*3 = 6
+4! = 1*2*3*4 = 24
+5! = 1*2*3*4*5 = 120
 
 */
 
@@ -36,10 +41,28 @@ int factNumb(int n) {
 }
 
 
+//byShardhaDi
+int factorial(int n) {
+    int fact = 1;
+    for(int i=1; i<=n; i++) {
+        fact = fact * i;
+    }
+    cout << "factorial (" << n << ") = " << fact << endl;
+    return fact;
+}
+
+
 int main() {
     int n = 5;
 
     cout << "factorial = " << factNumb(n) << endl;
+
+    factorial(0);
+    factorial(1);
+    factorial(2);
+    factorial(3);
+    factorial(4);
+    factorial(5);
 
     return 0;
 }
