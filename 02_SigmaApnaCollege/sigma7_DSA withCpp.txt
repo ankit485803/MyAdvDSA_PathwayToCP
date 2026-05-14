@@ -28,5 +28,7 @@ ch5_Operators
 ch6_conditionalStatement
 ch7_Loops
 ch8_Patterns   (start: 25th March Thur, end: 27th April 2026 Mon)
-ch9_Functions  (start: 4th May Mon , end: 12th May 2026 Tues)  in DOMSCopy1
-c10_BinaryNumSystem (start: 14th May Thur, end:  ) in new DOMSCopy2
+ch9_Functions  (start: 4th May Mon , end: 12th May 2026 Tues)  in DOMSCopy1 partA
+
+ch10_BinaryNumSystem (start: 14th May Thur, end:  ) in new DOMSCopy2 partB
+ch11_Pointers   
