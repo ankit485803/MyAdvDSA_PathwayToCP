@@ -7,7 +7,7 @@ Flow of Pointer chapter - what's learn
 
 3. Pass by References = Pointer + References (Alias)
 4. Array pointers
-5. Pointer Arithematics
+5. Pointer Arithmetics
 
 6. Quest
 
@@ -16,4 +16,4 @@ Use of symbol &
 - bitwise OR, address of, Alias
 
 Use of *
-- multipy, derefence
+- multiply, dereference
