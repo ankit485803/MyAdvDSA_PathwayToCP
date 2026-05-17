@@ -56,6 +56,29 @@ s consists only of digits.
 */
 
 
+class Solution {
+public:
+    bool isAdjacentDiffAtMostTwo(string s) {
+        //step1: convert str to int
+        int num = stoi(s);
+        vector<int> arr;
+
+        //step2: put digits into arr
+        while(num > 0) {
+            int lastD = num % 10;
+            arr.push_back(lastD);
+            num /= 10;  //removeLastD
+        }
+
+        //step3: check absDiff
+        for(int i=0; i < arr.size(); i++) {
+            if(abs(arr[i] - arr[i+1]) <= 2) {
+                return true;
+            }
+        }
+        return false;
+    }
+};
 
 class Solution {
 public:
