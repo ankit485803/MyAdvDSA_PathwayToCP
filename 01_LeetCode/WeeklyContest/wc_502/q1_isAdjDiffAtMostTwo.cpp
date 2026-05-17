@@ -58,7 +58,7 @@ s consists only of digits.
 
 class Solution {
 public:
-    bool isAdjacentDiffAtMostTwo(string s) {
+    bool isAdjacentDiffAtMostTwo(string s) {  //myFirstAttempt approach
         //step1: convert str to int
         int num = stoi(s);
         vector<int> arr;
