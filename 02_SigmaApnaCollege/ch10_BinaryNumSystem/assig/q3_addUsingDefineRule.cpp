@@ -136,3 +136,7 @@ Decimal Sum = 85
 sanja@IITP:/mnt/c/Users/sanja/Desktop/LabSession$
 
 */
+
+
+
+git commit -m "feat(sigmaApnaCollege): completed this chap along with all assig ques solved and ready for newChap pointers (ch10)"
