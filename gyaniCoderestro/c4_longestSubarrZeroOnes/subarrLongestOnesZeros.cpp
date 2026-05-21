@@ -1,4 +1,4 @@
-
+result = max(result, static_cast<int>(log10(num) + 1) );  //static cast because decimalVal
 
 /*
 
