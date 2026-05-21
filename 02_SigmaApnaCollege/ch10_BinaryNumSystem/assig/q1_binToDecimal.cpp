@@ -83,3 +83,26 @@ int main() {
 
     return 0;
 }
+
+
+/*
+4️⃣ Notes / Things to be careful about
+Binary numbers stored as integers:
+This works for small numbers, but if a binary number is very long (e.g., more than 31 bits), integers may overflow.
+In that case, storing the binary number as a string is safer.
+Shortcut method:
+Shortcut means: instead of calculating 2^0, 2^1… every time, you just sum the powers of 2 where the digit is 1.
+Your code already does it automatically because pow doubles each iteration.
+
+*/
+
+
+int binToDecimalStr(string s) {
+    int dec = 0;
+    int pow = 1;
+    for(int i = s.length() - 1; i >= 0; i--) {
+        if(s[i] == '1') dec += pow;
+        pow *= 2;
+    }
+    return dec;
+}
