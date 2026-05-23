@@ -16,25 +16,24 @@ q1. BubbleSort
 
 
 */
-
-
-
-
 vector<int> bubbleSort(vector<int> arr) {
-
-    //using TwoPointerApproach
-    int left = 0;
-    int right = arr.size() - 1;
-
-    for(int i=0; i<arr.size(); i++) {   
-        if(arr[left] < arr[right]) {
-            swap(arr[left], arr[right]);
-            return arr;
+    int n = arr.size();
+    for (int i = 0; i < n - 1; i++) {
+        // Last i elements are already in place
+        for (int j = 0; j < n - i - 1; j++) {
+            // Compare adjacent elements
+            if (arr[j] > arr[j + 1]) {
+                swap(arr[j], arr[j + 1]);
+            }
         }
-
     }
+    return arr;
+}
 
-};
+
+
+
+
 
 
 
