@@ -20,3 +20,6 @@ after endSem5paper 3rd year IITP and target as developer/scientist MNC FAANG
 */
 
 git reset --soft HEAD~1
+
+
+#include <cctype>  //for islower, isupper function

@@ -6,7 +6,8 @@
 
 
 1.1 bubbleSort dryRun
-
+1.2 #include <cctype>  //for islower, isupper function
+1.3 
 
 */
 
@@ -31,7 +32,7 @@ public:
     }
 
     bool check(vector<int>& nums) {
-        //bruteForce appraoch- check arr sortable or not if yes return true else false
+        //bruteForce approach- check arr sortable or not if yes return true else false
         
     }
 };
@@ -41,3 +42,35 @@ public:
 
 //1.2 src: 
 
+#include <cctype>  //for islower, isupper function
+class Solution {
+public:
+    int numberOfSpecialChars(string word) {
+        
+        bool lower[26] = {false};
+        bool upper[26] = {false};
+
+        for(char c : word) {
+            if(islower(c)) {  //using C++ STL funct islower
+                lower[c - 'a'] = true;  //markLower
+            } else if(isupper(c)) {
+                upper[c - 'A'] = true;
+            }
+        }
+
+
+        //nowCountSpecialChar
+        int count = 0;
+        for(int i=0; i<26; ++i) {
+            if(lower[i] && upper[i]) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+};
+
+
+
+//1.3 
