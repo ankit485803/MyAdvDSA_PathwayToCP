@@ -7,7 +7,10 @@
 
 1.1 bubbleSort dryRun
 1.2 #include <cctype>  //for islower, isupper function
-1.3 
+1.3 prefix / suffix multiple string -- TRIE (prefix tree use)
+1.4
+
+
 
 */
 
