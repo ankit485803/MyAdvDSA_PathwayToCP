@@ -124,7 +124,7 @@ public:
         int mini = INT_MAX;
 
         for (int num : nums) {
-            mini = min(mini, digitSum(num));
+            mini = min(mini, digitSum(num));br
         }
 
         return mini;
