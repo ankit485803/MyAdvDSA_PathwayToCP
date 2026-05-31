@@ -1,0 +1,87 @@
+
+
+/*
+
+31st May 2026 (Sunday)
+
+qno 2126  https://leetcode.com/problems/destroying-asteroids/?envType=daily-question&envId=2026-05-31
+
+2126. Destroying Asteroids
+Medium
+Topics
+
+Companies
+Hint
+You are given an integer mass, which represents the original mass of a planet. You are further given an integer array asteroids, where asteroids[i] is the mass of the ith asteroid.
+
+You can arrange for the planet to collide with the asteroids in any arbitrary order. If the mass of the planet is greater than or equal to the mass of the asteroid, the asteroid is destroyed and the planet gains the mass of the asteroid. Otherwise, the planet is destroyed.
+
+Return true if all asteroids can be destroyed. Otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: mass = 10, asteroids = [3,9,19,5,21]
+Output: true
+Explanation: One way to order the asteroids is [9,19,5,3,21]:
+- The planet collides with the asteroid with a mass of 9. New planet mass: 10 + 9 = 19
+- The planet collides with the asteroid with a mass of 19. New planet mass: 19 + 19 = 38
+- The planet collides with the asteroid with a mass of 5. New planet mass: 38 + 5 = 43
+- The planet collides with the asteroid with a mass of 3. New planet mass: 43 + 3 = 46
+- The planet collides with the asteroid with a mass of 21. New planet mass: 46 + 21 = 67
+All asteroids are destroyed.
+Example 2:
+
+Input: mass = 5, asteroids = [4,9,23,4]
+Output: false
+Explanation: 
+The planet cannot ever gain enough mass to destroy the asteroid with a mass of 23.
+After the planet destroys the other asteroids, it will have a mass of 5 + 4 + 9 + 4 = 22.
+This is less than 23, so a collision would not destroy the last asteroid.
+ 
+
+Constraints:
+
+1 <= mass <= 105
+1 <= asteroids.length <= 105
+1 <= asteroids[i] <= 105
+ 
+
+Seen this question in a real interview before?
+1/6
+Yes
+No
+Accepted
+107,464/189.2K
+Acceptance Rate
+56.8%
+Topics
+Staff
+Array
+Greedy
+Sorting
+Weekly Contest 274
+
+
+*/
+
+
+class Solution {
+public:
+    bool asteroidsDestroyed(int mass, vector<int>& asteroids) {   //tc=O(n), sc=O(1)
+        sort(begin(asteroids), end(asteroids)); 
+
+        for(int &m : asteroids) {
+            if(mass < m) {
+                return false;
+            } else if(mass >= 1e5) {
+                return true;
+            }
+
+            mass += m;
+        }
+
+        return true;
+    }
+};
