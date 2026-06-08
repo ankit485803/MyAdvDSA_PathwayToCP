@@ -3,7 +3,7 @@
 
 /*
 
-7th June 2026 (Saturday)
+6th June 2026 (Saturday)
 
 
 qno 2574  https://leetcode.com/problems/left-and-right-sum-differences/?envType=daily-question&envId=2026-06-07
