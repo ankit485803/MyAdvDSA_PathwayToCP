@@ -32,4 +32,6 @@ ch8_Patterns   (start: 25th March Thur, end: 27th April 2026 Mon) - favoriteChap
 ch9_Functions  (start: 4th May Mon , end: 12th May 2026 Tues)  in DOMSCopy1 partA
 
 ch10_BinaryNumSystem (start: 14th May Thur, end: 21st May Thur) in new DOMSCopy2 partB  
-ch11_IntroToPointers (st: 15th June 2026 Monday, end:  )   
+ch11_IntroToPointers (st: 15th June 2026 Monday, end:  17th June 2026 Thursday)
+ch12_ArrayPartI  (st: 6th July 2026 Monday, end:  )   
+ch13_ArrayPartII  (st:  , end:  )   

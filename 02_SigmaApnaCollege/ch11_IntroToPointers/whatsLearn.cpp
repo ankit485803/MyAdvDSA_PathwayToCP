@@ -10,7 +10,11 @@
 in an array. It calculates the exact position of each element in the output array using prefix sums, making it highly efficient for sorting integers with a limited range.
 
 
-1.2
+1.2  Dangling Pointers
+A dangling pointer in C++ is a pointer that points to a memory location that has already been deallocated or freed. 
+Dereferencing or accessing a dangling pointer triggers undefined behavior, which can lead to stealthy data corruption, unpredictable program outputs, or immediate segmentation faults and crashes.
+
+
 
 */
 
