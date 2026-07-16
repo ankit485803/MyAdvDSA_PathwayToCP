@@ -1,0 +1,36 @@
+
+Leetcode 3867. Sum of GCD of Formed Pairs), 16th July, 2026
+
+
+
+
+//Approach - simultation
+//T.C : O(nlog(n)+nlog(M)), M = max element 
+//S.C : O(n)
+class Solution {
+public:
+    long long gcdSum(vector<int>& nums) {
+        int n = nums.size();
+
+        vector<int> prefixGcd;
+        int maxEl = -1;
+        for(int i = 0; i < n; i++) {
+            maxEl = max(maxEl, nums[i]);
+            prefixGcd.push_back(__gcd(nums[i], maxEl));
+        }
+
+        sort(begin(prefixGcd), end(prefixGcd));
+
+        long long result = 0;
+        int i = 0;
+        int j = n-1;
+
+        while(i < j) {
+            result += __gcd(prefixGcd[i], prefixGcd[j]);
+            i++;
+            j--;
+        }
+
+        return result;
+    }
+};
