@@ -15,6 +15,29 @@ For example:
 
 
 1.3
+for (initialization; condition; update) {
+    // body
+}
+
+
+for (int i = n; ; i++) {
+An empty condition is treated as always true.
+for (int i = n; true; i++) {
+
+or 
+int i = n;
+while (true) {
+    ...
+    i++;
+}
+
+
+
+
+1.4
+
+
+
 
 
 */
@@ -47,4 +70,12 @@ int main() {
 
 
 
-//1.3
+//1.3 src: D:\GitProj\MyAdvDSA_PathwayToCP\0_Arjuna_CP\HappyNewYr26\08_Aug\q6_smallestDivisibleDigitProd.cpp
+for (int i = n; ; i++) {
+    // Check if i satisfies the condition
+    if (prod % t == 0)
+        return i;   // Stop as soon as the answer is found
+}
+
+
+//1.4
