@@ -19,6 +19,30 @@ int findExtraElement(const vector<int>& A, const vector<int>& B) {
     return ans;
 }
 
+
+// approach2: using map tc=sc= O(n)
+int findExtraElement(const vector<int>& A, const vector<int>& B) {
+    unordered_map<int, int> freq;
+
+    // Count frequency of elements in A
+    for (int num : A) {
+        freq[num]++;
+    }
+
+    // Subtract frequency using elements of B
+    for (int num : B) {
+        freq[num]--;
+
+        // If frequency becomes negative,
+        // this element exists extra in B
+        if (freq[num] < 0) {
+            return num;
+        }
+    }
+
+    return -1;
+}
+
 int main() {
     // Define the two input vectors
     vector<int> A = {2, 1, 3};
