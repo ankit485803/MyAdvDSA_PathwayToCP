@@ -1,0 +1,90 @@
+
+
+/*
+
+14th Aug 2026 (Friday)
+
+qno 3090  https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/?envType=daily-question&envId=2026-08-14
+
+090. Maximum Length Substring With Two Occurrences
+Solved
+Easy
+Topics
+
+Companies
+Hint
+Given a string s, return the maximum length of a substring such that it contains at most two occurrences of each character.
+ 
+
+Example 1:
+
+Input: s = "bcbbbcba"
+
+Output: 4
+
+Explanation:
+
+The following substring has a length of 4 and contains at most two occurrences of each character: "bcbbbcba".
+Example 2:
+
+Input: s = "aaaa"
+
+Output: 2
+
+Explanation:
+
+The following substring has a length of 2 and contains at most two occurrences of each character: "aaaa".
+ 
+
+Constraints:
+
+2 <= s.length <= 100
+s consists only of lowercase English letters.
+ 
+Discover more
+How-To, DIY & Expert Content
+Seen this question in a real interview before?
+1/6
+Yes
+No
+Accepted
+138,546/185.3K
+Acceptance Rate
+74.8%
+Topics
+Mid Level
+Hash Table
+String
+Sliding Window
+Weekly Contest 390
+
+*/
+
+
+class Solution {
+public:
+    int maximumLengthSubstring(string s) {  //tc=O(n), sc=O(1) using Khandani SliddingWindow techniques
+        int n = s.length();
+
+        int i = 0;
+        int j = 0;
+        vector<int> freq(26, 0);
+        
+        int result = 0;
+
+        while(j < n) {
+            int idx = s[j] - 'a';
+            freq[idx]++;
+
+            while(freq[idx] > 2) {
+                freq[s[i]-'a']--;
+                i++;
+            }
+
+            result = max(result, j-i+1);
+            j++;
+        }
+
+        return result;
+    }
+};
