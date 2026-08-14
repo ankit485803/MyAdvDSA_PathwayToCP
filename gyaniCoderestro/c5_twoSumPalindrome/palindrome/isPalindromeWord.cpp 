@@ -1,0 +1,36 @@
+
+
+/*
+date of uploaded: 24th July 
+src: https://www.instagram.com/reel/DbLRJVPhabp
+
+Problem: Check whether a given string is a palindrome.
+TC: O(n), SC: O(1)
+
+
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isPalindrome(const string& s) {
+    int left = 0, right = s.length() - 1;
+
+    while (left < right) {
+        if (s[left] != s[right])
+            return false;
+
+        left++;
+        right--;
+    }
+
+    return true;
+}
+
+int main() {
+    string s = "abccba";
+
+    cout << boolalpha << isPalindrome(s) << endl;
+
+    return 0;
+}
