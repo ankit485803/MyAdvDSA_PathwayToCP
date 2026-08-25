@@ -56,7 +56,7 @@ sanja@IITP:/mnt/c/Users/sanja/Desktop/LabSession$
 
 
 
-void printArrays(int *arr, int n) {   //tc=O(n^3)
+void printSubArrays(int *arr, int n) {   //tc=O(n^3)
 
     for(int st = 0; st < n; st++) {
         for(int end = st; end < n; end++) {
