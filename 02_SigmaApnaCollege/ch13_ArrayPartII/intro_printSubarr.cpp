@@ -5,7 +5,7 @@ git commit -m "feat(sigmaApnaCollege): start the newChap from today with printSu
 
 /*
 
-17th Aug 2026 (Monday) Print Subarrays
+17th Aug 2026 (Monday - day12) Print Subarrays
 
 Subarray is a continuos part of an array
 
