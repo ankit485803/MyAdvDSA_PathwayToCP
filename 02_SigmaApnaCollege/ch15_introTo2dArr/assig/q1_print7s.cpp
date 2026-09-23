@@ -24,7 +24,7 @@ m → number of columns
 using namespace std;
 
 
-int countSeven(int arr[][3], int n, int m) {
+int countSeven(int arr[][3], int n, int m) {   //tc=O(n * m), sc=O(1)
     int count = 0;
 
     for(int i=0; i<n; i++) {  //OUTER loop: no of rows 

@@ -15,7 +15,7 @@ Output - 18
 using namespace std;
 
 
-int sumRow(int nums[3][3], int n, int m) {
+int sumRow(int nums[3][3], int n, int m) {  //tc=O(n * m), sc=O(1)
     int sum = 0;
 
     for(int i=0; i<n; i++) {  //rows
@@ -44,12 +44,12 @@ int main() {
 }
 
 
-int sumRow(int nums[3][3], int n, int m) {
+int sumRow(int nums[3][3], int n, int m) { //optimize tc=O(m), sc=O(1) only because hmko given row two fix only change cols
 
     int sum = 0;
 
     for(int j = 0; j < m; j++) {
-        sum += nums[1][j];
+        sum += nums[1][j];   //directly row=1 and cols = j ko pass as input bhai
     }
 
     cout << "sum of 2nd row elem = " << sum << endl;
