@@ -34,6 +34,7 @@ int main() {
 
 //creation & output
 int main() {
+    
     //1st ways: Size automatically determined
     char work[] = "code";  //esmail size defined karne ki required nahi hai automatic right side le leta  hai
     cout << work << endl;
