@@ -38,5 +38,5 @@ ch13_ArrayPartII  (st: 17th Aug'26 Mon, end: 27th Aug'26 Thur)
 ch14_basicSortingAlgo (st: 7th Sep'26 Mon, end: 15th Sep'26 Tues) day12
 ch15_introTo2dArr (st: 16th Sep'26 Wed, end: 19th Sep'26 Sat) day13
 ch16_string  (st: 21st Sep'26 Mon, end: 26th Sep'26 Sat ) day14
-ch17_vectors  (st: 5th Oct'26 Mon, end:  ) day15
+ch17_vectors  (st: 5th Oct'26 Mon, end: 7th Oct'26 Wed) day15
 ch18_bitManipulation (st:  , end:  ) day16
