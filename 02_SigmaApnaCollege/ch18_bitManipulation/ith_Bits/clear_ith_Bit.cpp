@@ -12,7 +12,7 @@ Clear ith Bit means: convert 0 into 0 and 1 into 0 jise wah clear ho jayega
 using namespace std;
 
 
-int clearIthBit(int num, int i) {
+int clearIthBit(int num, int i) {  //tc=O(1)=sc because hm use kar rahe h bit approach ko
     int bitMask = ~(1 << i);
 
     return num & bitMask;

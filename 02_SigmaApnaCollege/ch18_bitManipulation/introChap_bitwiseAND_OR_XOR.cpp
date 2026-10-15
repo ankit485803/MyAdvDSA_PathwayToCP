@@ -28,7 +28,7 @@ Rule of bitwis XOR:  same dono then 0, and diff 1
     1 | 1 --> 1
     
     
-
+Note: yah chap es liye bhi imp hai because tc=O(1)=sc as this is faster approach bit wala approach, used as optimization 
 
 */
 
