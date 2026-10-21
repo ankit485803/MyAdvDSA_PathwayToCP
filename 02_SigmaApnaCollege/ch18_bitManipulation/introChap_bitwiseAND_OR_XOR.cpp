@@ -1,6 +1,6 @@
 
 git commit -m "feat(sigmaApnaCollege): start newChap and cover bitwise AND, OR, XOR and shift opertors, checkOddEven(ch18_bitManipulation)" 
-
+git commit -m "feat(sigmaApnaCollege): done with assig ques and ready for newCh (ch18_bitManipulation)" 
 /*
 
 10th Oct 2026 (Saturday)
