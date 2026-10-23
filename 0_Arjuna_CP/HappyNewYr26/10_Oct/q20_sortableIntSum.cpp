@@ -93,6 +93,8 @@ public:
 
                 if (!isRotation(vec1, vec2)) {
                     valid = false;
+
+                    
                     break;
                 }
             }
