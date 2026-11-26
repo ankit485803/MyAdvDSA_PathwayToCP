@@ -13,7 +13,7 @@ approach4: using logN time jo binarySearch mai hota hai
  x^n/2
 */
 
-
+ 
 #include <iostream>
 using namespace std;
 
